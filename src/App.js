@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import HeroSection from "./components/HeroSection";
 import Nav from "./components/Nav";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 const Container = styled.div`
@@ -32,6 +33,7 @@ function App() {
         <Nav />
         <HeroSection />
         <Skills />
+        <Projects />
       </Container>
     </>
   );

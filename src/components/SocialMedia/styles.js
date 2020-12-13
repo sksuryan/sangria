@@ -8,4 +8,11 @@ export const Container = styled.div`
     width: 32px;
     margin: 8px;
   }
+
+  @media (max-width: 550px) {
+    & > * {
+      height: 24px;
+      width: 24px;
+    }
+  }
 `;

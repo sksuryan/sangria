@@ -5,13 +5,14 @@ export const Container = styled.div`
   width: 90%;
 
   margin: 0 auto;
-  padding-bottom: 32px;
+  padding-bottom: 144px;
 
   display: flex;
   flex-direction: column;
 
   @media (max-width: 560px) {
     height: max-content;
+    padding-bottom: 96px;
   }
 `;
 
