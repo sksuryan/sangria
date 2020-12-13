@@ -1,4 +1,5 @@
 import { Container, Hello, Name, Details, NameSpan } from "./styles";
+import SocialMedia from "../SocialMedia";
 
 function HeroSection() {
   return (
@@ -14,6 +15,7 @@ function HeroSection() {
         and building things that interests him, currently pursuing B. Tech in
         CSE.
       </Details>
+      <SocialMedia />
     </Container>
   );
 }

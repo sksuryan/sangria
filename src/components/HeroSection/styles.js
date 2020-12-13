@@ -13,8 +13,8 @@ export const Container = styled.div`
   margin: 0 auto;
 
   @media (max-width: 450px) {
-    padding-top: 36%;
-    justify-content: flex-start;
+    height: 78%;
+    justify-content: center;
     align-items: flex-start;
   }
 `;
@@ -55,7 +55,7 @@ export const Name = styled.h1`
 
 export const Details = styled.p`
   font-family: "Montserrat";
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
 
   width: 42%;
@@ -68,10 +68,6 @@ export const Details = styled.p`
 
   @media (max-width: 1024px) {
     width: 75%;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 18px;
   }
 
   @media (max-width: 450px) {

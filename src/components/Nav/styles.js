@@ -12,6 +12,11 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 0 5vw;
 
+  background-color: rgba(244, 248, 251, 0.6);
+  backdrop-filter: blur(40px);
+
+  border-bottom-right-radius: 50px;
+
   justify-content: space-between;
   align-items: center;
 
@@ -41,24 +46,26 @@ export const Logo = styled.a`
     color: black;
   }
 
-  &::after {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    content: "";
+  @media (min-width: 1024px) {
+    &::after {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      content: "";
 
-    height: 2px;
-    left: 50%;
-    width: 0;
+      height: 2px;
+      left: 50%;
+      width: 0;
 
-    background-color: #651fbf;
+      background-color: #651fbf;
 
-    transition: width 0.5s ease, left 0.5s ease;
-  }
+      transition: width 0.5s ease, left 0.5s ease;
+    }
 
-  &:hover::after {
-    left: 0;
-    width: 100%;
+    &:hover::after {
+      left: 0;
+      width: 100%;
+    }
   }
 
   @media (max-width: 768px) {

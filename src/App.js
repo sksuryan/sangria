@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import HeroSection from "./components/HeroSection";
 import Nav from "./components/Nav";
+import Skills from "./components/Skills";
 
 const Container = styled.div`
   height: 100vh;
@@ -16,7 +17,8 @@ const Background = styled.div`
 
   position: fixed;
 
-  background: url('https://source.unsplash.com/7JX0-bfiuxQ');
+  background: url("https://source.unsplash.com/alS7ewQ41M8");
+  background-size: cover;
   filter: blur(40px);
 
   z-index: -1;
@@ -25,11 +27,12 @@ const Background = styled.div`
 function App() {
   return (
     <>
-    <Background />
-    <Container>
-      <Nav />
-      <HeroSection />
-    </Container>
+      <Background />
+      <Container>
+        <Nav />
+        <HeroSection />
+        <Skills />
+      </Container>
     </>
   );
 }
