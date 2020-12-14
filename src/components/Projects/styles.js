@@ -89,14 +89,22 @@ export const ProjectLinks = styled.div`
   & > * {
     margin: 4px;
     margin-left: 0;
+    margin-right: 12px;
   }
 
   & img {
-    height: 32px;
-    width: 32px;
+    height: 36px;
+    width: 36px;
   }
 
   @media (max-width: 768px) {
     padding: 8px 0px;
+  }
+
+  @media (max-width: 550px) {
+    & img {
+      height: 24px;
+      width: 24px;
+    }
   }
 `;
