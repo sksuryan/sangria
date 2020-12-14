@@ -5,15 +5,10 @@ export const Container = styled.div`
   width: 90%;
 
   margin: 0 auto;
-  padding-bottom: 144px;
+  padding-bottom: 96px;
 
   display: flex;
   flex-direction: column;
-
-  @media (max-width: 560px) {
-    height: max-content;
-    padding-bottom: 96px;
-  }
 `;
 
 export const Title = styled.div`
@@ -32,6 +27,5 @@ export const Title = styled.div`
 
   @media (max-width: 450px) {
     font-size: 24px;
-    text-align: initial;
   }
 `;

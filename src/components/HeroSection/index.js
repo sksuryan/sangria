@@ -3,7 +3,7 @@ import SocialMedia from "../SocialMedia";
 
 function HeroSection() {
   return (
-    <Container>
+    <Container id="HeroSection">
       <Hello>
         hello there<span>👋</span>
       </Hello>

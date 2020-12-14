@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Footer from "./components/Footer";
 
 import HeroSection from "./components/HeroSection";
 import Nav from "./components/Nav";
@@ -34,6 +35,7 @@ function App() {
         <HeroSection />
         <Skills />
         <Projects />
+        <Footer />
       </Container>
     </>
   );
