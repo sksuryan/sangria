@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
   height: 10%;
@@ -38,6 +38,15 @@ export const Container = styled.div`
   }
 `;
 
+const heartBeat = keyframes`
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+`;
+
 export const DesignedBy = styled.p`
   font-family: "Montserrat";
   font-size: 16px;
@@ -55,7 +64,10 @@ export const DesignedBy = styled.p`
   }
 
   & span {
+    display: inline-block;
     font-style: normal;
+
+    animation: ${heartBeat} alternate 0.5s ease-in-out infinite;
   }
 `;
 
