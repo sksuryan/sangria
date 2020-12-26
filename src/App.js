@@ -15,16 +15,10 @@ const Container = styled.div`
 
 const Background = styled.div`
   position: fixed;
+  height: 100vh;
+  width: 100vw;
 
-  top: 0;
-  bottom: 0;
-  left: -40px;
-  right: -40px;
-
-  margin: -40px;
-  margin-bottom: 0;
-
-  /* background: #fcfcfc; */
+  background: url("https://source.unsplash.com/alS7ewQ41M8");
   background-size: cover;
   filter: blur(10px);
 
@@ -41,9 +35,7 @@ const Background = styled.div`
 function App() {
   return (
     <>
-      <Background>
-        <img src="https://source.unsplash.com/alS7ewQ41M8" alt="background" />
-      </Background>
+      <Background />
       <Container>
         <Nav />
         <HeroSection />
