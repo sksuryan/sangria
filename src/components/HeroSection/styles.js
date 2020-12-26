@@ -56,7 +56,7 @@ export const Name = styled.h1`
 export const Details = styled.p`
   font-family: "Montserrat";
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
 
   width: 42%;
   text-align: justify;

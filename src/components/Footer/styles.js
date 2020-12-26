@@ -14,6 +14,8 @@ export const Container = styled.div`
   background-color: rgba(244, 248, 251, 0.2);
   backdrop-filter: blur(40px);
 
+  border-top-left-radius: 50px;
+
   padding: 0 5vw;
 
   @media (min-width: 768px) {
@@ -24,6 +26,10 @@ export const Container = styled.div`
       transform: translateY(-50%);
       margin-right: 32px;
     }
+  }
+
+  @media (max-width: 550px) {
+    height: 15%;
   }
 
   & img {

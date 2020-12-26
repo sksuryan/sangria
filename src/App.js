@@ -14,22 +14,36 @@ const Container = styled.div`
 `;
 
 const Background = styled.div`
-  height: 100vh;
-  width: 100vw;
-
   position: fixed;
 
-  background: url("https://source.unsplash.com/alS7ewQ41M8");
+  top: 0;
+  bottom: 0;
+  left: -40px;
+  right: -40px;
+
+  margin: -40px;
+  margin-bottom: 0;
+
+  /* background: #fcfcfc; */
   background-size: cover;
-  filter: blur(40px);
+  filter: blur(10px);
 
   z-index: -1;
+
+  & img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+  }
 `;
 
 function App() {
   return (
     <>
-      <Background />
+      <Background>
+        <img src="https://source.unsplash.com/alS7ewQ41M8" alt="background" />
+      </Background>
       <Container>
         <Nav />
         <HeroSection />

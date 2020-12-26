@@ -13,6 +13,7 @@ export const Container = styled.div`
   padding: 0 5vw;
 
   background-color: rgba(244, 248, 251, 0.6);
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
   backdrop-filter: blur(40px);
 
   border-bottom-right-radius: 50px;

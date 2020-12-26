@@ -46,7 +46,7 @@ export const SkillContainer = styled.div`
 export const Skill = styled.p`
   font-family: "Montserrat";
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
 
   padding: 16px;
 
