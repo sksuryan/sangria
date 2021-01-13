@@ -5,10 +5,10 @@ export const SkillType = styled.h1`
   align-items: center;
 
   font-family: "Montserrat";
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 900;
 
-  border-left: solid 4px #651fbf;
+  border-left: solid 4px #d6d6d6;
   padding-left: 12px;
 
   margin-top: 36px;
@@ -17,17 +17,22 @@ export const SkillType = styled.h1`
   /* text-align: center; */
 
   & img {
-    margin: 8px;
+    margin: 0 8px;
   }
 
   @media (max-width: 768px) {
     margin-top: 24px;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   @media (max-width: 450px) {
-    font-size: 20px;
+    font-size: 18px;
     text-align: initial;
+
+    & img {
+      width: 36px;
+      height: 36px;
+    }
   }
 `;
 

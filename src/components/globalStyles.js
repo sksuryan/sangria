@@ -26,7 +26,7 @@ export const Title = styled.div`
   /* text-align: center; */
 
   & img {
-    margin: 8px;
+    margin: 0 8px;
   }
 
   @media (max-width: 768px) {
