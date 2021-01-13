@@ -5,9 +5,21 @@ import { SkillContainer, Skill, SkillType } from "./styles";
 function Skills() {
   return (
     <Container>
-      <Title>👨‍💻 Skills</Title>
+      <Title>
+        <img
+          src="https://img.icons8.com/bubbles/50/000000/laptop.png"
+          alt="laptop icon"
+        />{" "}
+        <p>Skills</p>
+      </Title>
       <>
-        <SkillType>📚 Languages:</SkillType>
+        <SkillType>
+          <img
+            src="https://img.icons8.com/bubbles/50/000000/books.png"
+            alt="book icon"
+          />{" "}
+          <p>Languages:</p>
+        </SkillType>
         <SkillContainer>
           <Skill>✨ Python</Skill>
           <Skill>✨ JavaScript</Skill>
@@ -18,7 +30,13 @@ function Skills() {
         </SkillContainer>
       </>
       <>
-        <SkillType>🐧 Libraries / Tools:</SkillType>
+        <SkillType>
+          <img
+            src="https://img.icons8.com/bubbles/50/000000/linux-client.png"
+            alt="linux server icon"
+          />{" "}
+          <p>Libraries / Tools:</p>
+        </SkillType>
         <SkillContainer>
           <Skill>✨ React</Skill>
           <Skill>✨ Node</Skill>

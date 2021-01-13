@@ -10,7 +10,13 @@ import {
 function Projects() {
   return (
     <Container>
-      <Title>🚀 Projects</Title>
+      <Title>
+        <img
+          src="https://img.icons8.com/bubbles/50/000000/rocket.png"
+          alt="rocket icon"
+        />{" "}
+        <p>Projects</p>
+      </Title>
       <ProjectsContainer>
         <ProjectContainer>
           <ProjectName>🔥 autoflow</ProjectName>

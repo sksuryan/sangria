@@ -18,7 +18,7 @@ const Background = styled.div`
   height: 100vh;
   width: 100vw;
 
-  background: url("https://source.unsplash.com/alS7ewQ41M8");
+  /* background: url("https://source.unsplash.com/alS7ewQ41M8"); */
   background-size: cover;
   filter: blur(10px);
 

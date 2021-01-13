@@ -12,6 +12,9 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.div`
+  display: flex;
+  align-items: center;
+
   font-family: "Montserrat";
   font-size: 36px;
   font-weight: 900;
@@ -21,6 +24,11 @@ export const Title = styled.div`
 
   margin-bottom: 16px;
   /* text-align: center; */
+
+  & img {
+    margin: 8px;
+  }
+
   @media (max-width: 768px) {
     font-size: 30px;
   }

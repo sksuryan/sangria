@@ -11,10 +11,10 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 
-  background-color: rgba(244, 248, 251, 0.2);
-  backdrop-filter: blur(40px);
+  /* background-color: rgba(244, 248, 251, 0.2); */
+  /* backdrop-filter: blur(40px); */
 
-  border-top-left-radius: 50px;
+  /* border-top-left-radius: 50px; */
 
   padding: 0 5vw;
 

@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const SkillType = styled.h1`
+  display: flex;
+  align-items: center;
+
   font-family: "Montserrat";
   font-size: 28px;
   font-weight: 900;
@@ -12,6 +15,11 @@ export const SkillType = styled.h1`
 
   margin-bottom: 16px;
   /* text-align: center; */
+
+  & img {
+    margin: 8px;
+  }
+
   @media (max-width: 768px) {
     margin-top: 24px;
     font-size: 24px;
