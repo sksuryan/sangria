@@ -66,6 +66,14 @@ export const DesignedBy = styled.p`
     padding-top: 8px;
   }
 
+  @media (max-width: 385px) {
+    flex-direction: column;
+
+    & span {
+      margin: 6px;
+    }
+  }
+
   & span {
     display: inline-block;
     font-style: normal;
