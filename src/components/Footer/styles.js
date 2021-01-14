@@ -32,7 +32,7 @@ export const Container = styled.div`
     height: 15%;
   }
 
-  & img {
+  & img.up {
     height: 48px;
     width: 48px;
   }
@@ -48,6 +48,9 @@ const heartBeat = keyframes`
 `;
 
 export const DesignedBy = styled.p`
+  display: flex;
+  align-items: center;
+
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 500;

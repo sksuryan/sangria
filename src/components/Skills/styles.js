@@ -57,6 +57,9 @@ export const SkillContainer = styled.div`
 `;
 
 export const Skill = styled.p`
+  display: flex;
+  align-items: center;
+
   font-family: "Montserrat";
   font-size: 20px;
   font-weight: 400;

@@ -26,7 +26,6 @@ export const ProjectContainer = styled.div`
   height: 100%;
 
   background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(40px);
   border-bottom-right-radius: 50px;
   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.1);
 
@@ -38,6 +37,9 @@ export const ProjectContainer = styled.div`
 `;
 
 export const ProjectName = styled.p`
+  display: flex;
+  align-items: center;
+
   font-family: "Montserrat";
   font-size: 24px;
   font-weight: 500;

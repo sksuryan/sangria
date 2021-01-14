@@ -5,6 +5,7 @@ function Footer() {
     <Container>
       <a href="#HeroSection">
         <img
+          className="up"
           src="https://img.icons8.com/clouds/100/000000/up.png"
           alt="back to top"
         />
