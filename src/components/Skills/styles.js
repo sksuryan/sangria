@@ -17,6 +17,7 @@ export const SkillType = styled.h1`
   /* text-align: center; */
 
   & img {
+    width: 50px;
     margin: 0 8px;
   }
 

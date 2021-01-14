@@ -7,7 +7,7 @@ function Skills() {
     <Container>
       <Title>
         <img
-          src="https://img.icons8.com/bubbles/50/000000/laptop.png"
+          src="https://img.icons8.com/bubbles/100/000000/laptop.png"
           alt="laptop icon"
         />{" "}
         <p>Skills</p>
@@ -15,7 +15,7 @@ function Skills() {
       <>
         <SkillType>
           <img
-            src="https://img.icons8.com/bubbles/50/000000/books.png"
+            src="https://img.icons8.com/bubbles/100/000000/books.png"
             alt="book icon"
           />{" "}
           <p>Languages:</p>
@@ -32,7 +32,7 @@ function Skills() {
       <>
         <SkillType>
           <img
-            src="https://img.icons8.com/bubbles/50/000000/linux-client.png"
+            src="https://img.icons8.com/bubbles/100/000000/linux-client.png"
             alt="linux server icon"
           />{" "}
           <p>Libraries / Tools:</p>

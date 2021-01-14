@@ -12,7 +12,7 @@ function Projects() {
     <Container>
       <Title>
         <img
-          src="https://img.icons8.com/bubbles/50/000000/rocket.png"
+          src="https://img.icons8.com/bubbles/100/000000/rocket.png"
           alt="rocket icon"
         />{" "}
         <p>Projects</p>
