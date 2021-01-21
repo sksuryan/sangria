@@ -1,6 +1,7 @@
+import React from "react";
 import { Container, DesignedBy, Icons8 } from "./styles";
 
-function Footer() {
+const Footer = () => {
   return (
     <Container>
       <a href="#HeroSection">
@@ -11,16 +12,20 @@ function Footer() {
         />
       </a>
       <DesignedBy>
-        designed and built with <span>❤️</span> by @sksuryan
+        designed and built with{" "}
+        <span role="img" aria-label="heart emoji">
+          ❤️
+        </span>{" "}
+        by @sksuryan
       </DesignedBy>
       <Icons8>
         icons by{" "}
-        <a href="https://icons8.com/" target="_blank" rel="noreferrer">
+        <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer">
           icons8
         </a>
       </Icons8>
     </Container>
   );
-}
+};
 
 export default Footer;

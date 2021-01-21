@@ -1,11 +1,13 @@
+import React from "react";
+
 import { Container, Logo } from "./styles";
 
-function Nav() {
+const Nav = () => {
   return (
     <Container>
       <Logo href="/">@sksuryan</Logo>
     </Container>
   );
-}
+};
 
 export default Nav;

@@ -1,11 +1,16 @@
+import React from "react";
+
 import { Container, Hello, Name, Details, NameSpan } from "./styles";
 import SocialMedia from "../SocialMedia";
 
-function HeroSection() {
+const HeroSection = () => {
   return (
     <Container id="HeroSection">
       <Hello>
-        hello there<span>👋</span>
+        hello there
+        <span role="img" aria-label="hello emoji">
+          👋
+        </span>
       </Hello>
       <Name>
         I'm <NameSpan>Saurabh Kumar Suryan</NameSpan>
@@ -18,6 +23,6 @@ function HeroSection() {
       <SocialMedia />
     </Container>
   );
-}
+};
 
 export default HeroSection;
