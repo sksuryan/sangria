@@ -1,23 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  position: fixed;
+  position: sticky;
   display: flex;
   height: 8vh;
   width: 100%;
 
   background-color: white;
 
-  /* border-bottom-right-radius: 50px; */
+  top: 0;
+
+  border-bottom: 1px solid #d8e3e7;
 
   justify-content: space-between;
   align-items: center;
 
   z-index: 1;
-
-  @media (max-width: 768px) {
-    width: 100vw;
-  }
 `;
 
 export const Logo = styled.a`

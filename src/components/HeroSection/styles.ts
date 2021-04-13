@@ -2,20 +2,17 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
 
   flex-direction: column;
 
   justify-content: center;
-  /* padding-top: 20vh; */
 
   margin: 0 auto;
 
   @media (max-width: 450px) {
     height: 70vh;
-    justify-content: center;
-    align-items: flex-start;
   }
 `;
 
