@@ -4,13 +4,7 @@ export const Container = styled.div`
   position: fixed;
   display: flex;
   height: 8vh;
-  width: 100vw;
-
-  top: 0;
-  left: 0;
-
-  margin: 0 auto;
-  padding: 0 5vw;
+  width: 100%;
 
   background-color: white;
 

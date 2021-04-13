@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  height: 60vh;
-  width: 90%;
+  height: 80vh;
+  width: 100%;
 
   flex-direction: column;
 
@@ -80,5 +80,5 @@ export const Details = styled.p`
 export const NameSpan = styled.span`
   display: inline-block;
   line-break: strict;
-  color: #651fbf;
+  color: #5a37c3;
 `;
