@@ -12,7 +12,7 @@ const Footer = () => {
         />
       </a>
       <DesignedBy>
-        designed and built with{" "}
+        designed with{" "}
         <span role="img" aria-label="heart emoji">
           ❤️
         </span>{" "}
