@@ -19,3 +19,7 @@ img.emoji {
 
   margin-right: 0.75rem;
 }
+
+* {
+  text-transform: lowercase;
+}

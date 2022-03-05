@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import Nav from './components/Nav';
@@ -25,11 +25,11 @@ const App = () => {
     <Container>
       <Nav />
       <HeroSection />
-      <Suspense fallback={<div>Loading...</div>}>
-        <Skills />
-        <Experience />
-        <Projects />
-      </Suspense>
+
+      <Skills />
+      <Experience />
+      <Projects />
+
       <Footer />
     </Container>
   );

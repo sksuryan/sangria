@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   position: sticky;
@@ -20,7 +20,7 @@ export const Container = styled.div`
 
 export const Logo = styled.a`
   position: relative;
-  font-family: "lilita one";
+  font-family: 'lilita one';
   font-size: 24px;
   color: black;
 
@@ -35,28 +35,6 @@ export const Logo = styled.a`
 
   &:visited {
     color: black;
-  }
-
-  @media (min-width: 1024px) {
-    &::after {
-      position: absolute;
-      display: block;
-      bottom: 0;
-      content: "";
-
-      height: 2px;
-      left: 50%;
-      width: 0;
-
-      background-color: #651fbf;
-
-      transition: width 0.5s ease, left 0.5s ease;
-    }
-
-    &:hover::after {
-      left: 0;
-      width: 100%;
-    }
   }
 
   @media (max-width: 768px) {
