@@ -29,7 +29,7 @@ const Details = [
     role: 'Software Development Intern',
     dates: 'Jun’21 – Jul’21 // New Delhi, India',
     details: [
-      '-	worked on the building UIs & state management of an internal tool using React, Redux, Bootstrap. ',
+      '-	Worked on the building UIs & state management of an internal tool using React, Redux, Bootstrap. ',
     ],
   },
   {

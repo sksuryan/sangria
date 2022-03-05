@@ -5,10 +5,10 @@ export const XPContainer = styled.div`
   flex-direction: column;
   width: 100%;
 
-  padding: 32px;
+  padding: 16px;
 
   @media (max-width: 550px) {
-    padding: 12px;
+    padding: 0;
   }
 `;
 
@@ -50,6 +50,9 @@ export const XP = styled.div`
 
   .details {
     color: #2e2e2e;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
 
   @media (max-width: 768px) {
