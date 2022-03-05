@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ProjectsContainer = styled.div`
   position: relative;
@@ -23,6 +23,9 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const ProjectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
   height: 100%;
 
   background-color: rgba(255, 255, 255, 0.6);
@@ -40,7 +43,7 @@ export const ProjectName = styled.p`
   display: flex;
   align-items: center;
 
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 24px;
   font-weight: 500;
 
@@ -58,7 +61,7 @@ export const ProjectName = styled.p`
 `;
 
 export const ProjectDetails = styled.p`
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 16px;
   font-weight: 300;
 
@@ -86,6 +89,7 @@ export const ProjectDetails = styled.p`
 `;
 
 export const ProjectLinks = styled.div`
+  margin-top: auto;
   padding: 8px 0;
 
   & > * {

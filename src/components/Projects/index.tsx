@@ -1,30 +1,30 @@
-import React from "react";
+import React from 'react';
 
-import { Container, Title } from "../globalStyles";
+import { Container, Title } from '../globalStyles';
 import {
   ProjectContainer,
   ProjectDetails,
   ProjectLinks,
   ProjectName,
   ProjectsContainer,
-} from "./styles";
+} from './styles';
 
 const Projects = () => {
   return (
     <Container>
       <Title>
         <img
-          src="https://img.icons8.com/bubbles/100/000000/rocket.png"
-          alt="rocket icon"
-        />{" "}
+          src='https://img.icons8.com/bubbles/100/000000/rocket.png'
+          alt='rocket icon'
+        />{' '}
         <p>Projects</p>
       </Title>
       <ProjectsContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role="img" aria-label="fire emoji">
+            <span role='img' aria-label='fire emoji'>
               🔥
-            </span>{" "}
+            </span>{' '}
             autoflow
           </ProjectName>
           <ProjectDetails>
@@ -34,37 +34,37 @@ const Projects = () => {
             less commands.
           </ProjectDetails>
           <ProjectDetails>
-            built using: <span className="highlight">python</span>,{" "}
-            <span className="highlight">click.py</span>
+            built using: <span className='highlight'>python</span>,{' '}
+            <span className='highlight'>click.py</span>
           </ProjectDetails>
           <ProjectLinks>
             <a
-              href="https://github.com/MLH-Fellowship/autoflow"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://github.com/MLH-Fellowship/autoflow'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img
-                src="https://img.icons8.com/ios/64/000000/github.png"
-                alt="github"
+                src='https://img.icons8.com/ios/64/000000/github.png'
+                alt='github'
               />
             </a>
             <a
-              href="https://pypi.org/project/python-af/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://pypi.org/project/python-af/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img
-                src="https://img.icons8.com/ios/96/000000/link--v1.png"
-                alt="link to the project"
+                src='https://img.icons8.com/ios/96/000000/link--v1.png'
+                alt='link to the project'
               />
             </a>
           </ProjectLinks>
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role="img" aria-label="hearts emoji">
+            <span role='img' aria-label='hearts emoji'>
               💕
-            </span>{" "}
+            </span>{' '}
             good vibes only
           </ProjectName>
           <ProjectDetails>
@@ -74,38 +74,38 @@ const Projects = () => {
             spirit.
           </ProjectDetails>
           <ProjectDetails>
-            built using: <span className="highlight">node (express, ejs)</span>,{" "}
-            <span className="highlight">mongoDB</span>,{" "}
-            <span className="highlight">python</span>
+            built using: <span className='highlight'>node (express, ejs)</span>,{' '}
+            <span className='highlight'>mongoDB</span>,{' '}
+            <span className='highlight'>python</span>
           </ProjectDetails>
           <ProjectLinks>
             <a
-              href="https://github.com/MLH-Fellowship/Good-Vibes-Only"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://github.com/MLH-Fellowship/Good-Vibes-Only'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img
-                src="https://img.icons8.com/ios/64/000000/github.png"
-                alt="github"
+                src='https://img.icons8.com/ios/64/000000/github.png'
+                alt='github'
               />
             </a>
             <a
-              href="https://testsfront.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://testsfront.herokuapp.com/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img
-                src="https://img.icons8.com/ios/96/000000/link--v1.png"
-                alt="link to the project"
+                src='https://img.icons8.com/ios/96/000000/link--v1.png'
+                alt='link to the project'
               />
             </a>
           </ProjectLinks>
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role="img" aria-label="music emoji">
+            <span role='img' aria-label='music emoji'>
               🎶
-            </span>{" "}
+            </span>{' '}
             flyrics
           </ProjectName>
           <ProjectDetails>
@@ -115,28 +115,28 @@ const Projects = () => {
             databases just to find out the lyrics to a song.
           </ProjectDetails>
           <ProjectDetails>
-            built using: <span className="highlight">react native</span>,{" "}
-            <span className="highlight">python (flask, spleeter)</span>,{" "}
-            <span className="highlight">google speech to text api</span>
+            built using: <span className='highlight'>react native</span>,{' '}
+            <span className='highlight'>python (flask, spleeter)</span>,{' '}
+            <span className='highlight'>google speech to text api</span>
           </ProjectDetails>
           <ProjectLinks>
             <a
-              href="https://github.com/AhadKhan98/Flyrics"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://github.com/AhadKhan98/Flyrics'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img
-                src="https://img.icons8.com/ios/64/000000/github.png"
-                alt="github"
+                src='https://img.icons8.com/ios/64/000000/github.png'
+                alt='github'
               />
             </a>
           </ProjectLinks>
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role="img" aria-label="heart face emoji">
+            <span role='img' aria-label='heart face emoji'>
               🥰
-            </span>{" "}
+            </span>{' '}
             cheery
           </ProjectName>
           <ProjectDetails>
@@ -145,28 +145,28 @@ const Projects = () => {
             Discord Server.
           </ProjectDetails>
           <ProjectDetails>
-            built using:{" "}
-            <span className="highlight">python(discord.py, flask)</span>,{" "}
-            <span className="highlight">mongoDB</span>,{" "}
+            built using:{' '}
+            <span className='highlight'>python(discord.py, flask)</span>,{' '}
+            <span className='highlight'>mongoDB</span>,{' '}
           </ProjectDetails>
           <ProjectLinks>
             <a
-              href="https://github.com/sksuryan/Cheery"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://github.com/0xSaurabh/Cheery'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img
-                src="https://img.icons8.com/ios/64/000000/github.png"
-                alt="github"
+                src='https://img.icons8.com/ios/64/000000/github.png'
+                alt='github'
               />
             </a>
           </ProjectLinks>
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role="img" aria-label="devil face emoji">
+            <span role='img' aria-label='devil face emoji'>
               😈
-            </span>{" "}
+            </span>{' '}
             evil in jaffar
           </ProjectName>
           <ProjectDetails>
@@ -178,26 +178,26 @@ const Projects = () => {
             Quest to defeat the EVIL IN JAFFAR!
           </ProjectDetails>
           <ProjectDetails>
-            built using: <span className="highlight">unity & c#</span>
+            built using: <span className='highlight'>unity & c#</span>
           </ProjectDetails>
           <ProjectLinks>
             <a
-              href="https://github.com/MLH-Fellowship/Evil-in-Jaffar"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://github.com/MLH-Fellowship/Evil-in-Jaffar'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img
-                src="https://img.icons8.com/ios/64/000000/github.png"
-                alt="github"
+                src='https://img.icons8.com/ios/64/000000/github.png'
+                alt='github'
               />
             </a>
           </ProjectLinks>
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role="img" aria-label="robot face emoji">
+            <span role='img' aria-label='robot face emoji'>
               🤖
-            </span>{" "}
+            </span>{' '}
             monday-api
           </ProjectName>
           <ProjectDetails>
@@ -206,87 +206,46 @@ const Projects = () => {
             to the student.
           </ProjectDetails>
           <ProjectDetails>
-            built using:{" "}
-            <span className="highlight">python(flask, beautifulsoup)</span>
+            built using: <span className='highlight'>python, flask & BS4</span>
           </ProjectDetails>
           <ProjectLinks>
             <a
-              href="https://github.com/sksuryan/monday-api"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://github.com/0xSaurabh/monday-api'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img
-                src="https://img.icons8.com/ios/64/000000/github.png"
-                alt="github"
+                src='https://img.icons8.com/ios/64/000000/github.png'
+                alt='github'
               />
             </a>
             <a
-              href="https://thecodelife.science.blog/2020/08/07/automating-my-attendance-with-python/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://thecodelife.science.blog/2020/08/07/automating-my-attendance-with-python/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img
-                src="https://img.icons8.com/wired/64/000000/wordpress.png"
-                alt="link to the blog"
+                src='https://img.icons8.com/wired/64/000000/wordpress.png'
+                alt='link to the blog'
               />
             </a>
             <a
-              href="https://api-monday.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://api-monday.herokuapp.com/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img
-                src="https://img.icons8.com/ios/96/000000/link--v1.png"
-                alt="link to the project"
+                src='https://img.icons8.com/ios/96/000000/link--v1.png'
+                alt='link to the project'
               />
             </a>
           </ProjectLinks>
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role="img" aria-label="mic emoji">
-              🎤
-            </span>{" "}
-            TechAboutIt
-          </ProjectName>
-          <ProjectDetails>
-            An iOS/Web app that will help find right speakers for your events
-            and vice versa.
-          </ProjectDetails>
-          <ProjectDetails>
-            built using:{" "}
-            <span className="highlight">
-              swift(iOS), python(flask), mongoDB
-            </span>
-          </ProjectDetails>
-          <ProjectLinks>
-            <a
-              href="https://github.com/sksuryan/project-three"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.icons8.com/ios/64/000000/github.png"
-                alt="github"
-              />
-            </a>
-            <a
-              href="https://thecodelife.science.blog/2020/10/28/three-weeks-into-mlh-fellowship/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.icons8.com/wired/64/000000/wordpress.png"
-                alt="link to the blog"
-              />
-            </a>
-          </ProjectLinks>
-        </ProjectContainer>
-        <ProjectContainer>
-          <ProjectName>
-            <span role="img" aria-label="face mask emoji">
+            <span role='img' aria-label='face mask emoji'>
               😷
-            </span>{" "}
+            </span>{' '}
             coviz
           </ProjectName>
           <ProjectDetails>
@@ -295,37 +254,37 @@ const Projects = () => {
             about-corona.net.
           </ProjectDetails>
           <ProjectDetails>
-            built using: <span className="highlight">react, d3.js</span>
+            built using: <span className='highlight'>react, d3.js</span>
           </ProjectDetails>
           <ProjectLinks>
             <a
-              href="https://github.com/sksuryan/covid-19-viz"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://github.com/0xSaurabh/covid-19-viz'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img
-                src="https://img.icons8.com/ios/64/000000/github.png"
-                alt="github"
+                src='https://img.icons8.com/ios/64/000000/github.png'
+                alt='github'
               />
             </a>
             <a
-              href="https://thecodelife.science.blog/2020/05/01/my-first-data-visualization-project/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://thecodelife.science.blog/2020/05/01/my-first-data-visualization-project/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img
-                src="https://img.icons8.com/wired/64/000000/wordpress.png"
-                alt="link to the blog"
+                src='https://img.icons8.com/wired/64/000000/wordpress.png'
+                alt='link to the blog'
               />
             </a>
             <a
-              href="https://cviz.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://cviz.netlify.app/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img
-                src="https://img.icons8.com/ios/96/000000/link--v1.png"
-                alt="link to the project"
+                src='https://img.icons8.com/ios/96/000000/link--v1.png'
+                alt='link to the project'
               />
             </a>
           </ProjectLinks>

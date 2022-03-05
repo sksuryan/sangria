@@ -1,11 +1,12 @@
-import React from "react";
-import styled from "styled-components";
+import React, { lazy, Suspense } from 'react';
+import styled from 'styled-components';
 
-import Nav from "./components/Nav";
-import Skills from "./components/Skills";
-import Footer from "./components/Footer";
-import Projects from "./components/Projects";
-import HeroSection from "./components/HeroSection";
+import Nav from './components/Nav';
+import HeroSection from './components/HeroSection';
+import Footer from './components/Footer';
+
+const Skills = lazy(() => import('./components/Skills'));
+const Projects = lazy(() => import('./components/Projects'));
 
 const Container = styled.div`
   position: relative;
@@ -24,8 +25,10 @@ const App = () => {
     <Container>
       <Nav />
       <HeroSection />
-      <Skills />
-      <Projects />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Skills />
+        <Projects />
+      </Suspense>
       <Footer />
     </Container>
   );
