@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   height: max-content;
@@ -15,7 +15,7 @@ export const Title = styled.div`
   display: flex;
   align-items: center;
 
-  font-family: "Montserrat";
+  font-family: 'Poppins';
   font-size: 36px;
   font-weight: 900;
 

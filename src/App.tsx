@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import Nav from './components/Nav';
 import HeroSection from './components/HeroSection';
 import Footer from './components/Footer';
-
-const Skills = lazy(() => import('./components/Skills'));
-const Projects = lazy(() => import('./components/Projects'));
+import Experience from './components/Experience';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
 
 const Container = styled.div`
   position: relative;
@@ -27,6 +27,7 @@ const App = () => {
       <HeroSection />
       <Suspense fallback={<div>Loading...</div>}>
         <Skills />
+        <Experience />
         <Projects />
       </Suspense>
       <Footer />

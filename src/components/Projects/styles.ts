@@ -43,8 +43,8 @@ export const ProjectName = styled.p`
   display: flex;
   align-items: center;
 
-  font-family: 'Montserrat';
-  font-size: 24px;
+  font-family: 'Poppins';
+  font-size: 20px;
   font-weight: 500;
 
   padding-bottom: 16px;
@@ -52,18 +52,18 @@ export const ProjectName = styled.p`
   margin: 8px 0;
 
   @media (max-width: 768px) {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   @media (max-width: 450px) {
-    font-size: 20px;
+    font-size: 16px;
   }
 `;
 
 export const ProjectDetails = styled.p`
-  font-family: 'Montserrat';
+  font-family: 'Poppins';
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
 
   text-align: justify;
 
@@ -72,6 +72,8 @@ export const ProjectDetails = styled.p`
   margin: 8px 0;
 
   padding: 8px 0px;
+
+  color: #2e2e2e;
 
   @media (max-width: 768px) {
     font-size: 14px;

@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
   height: 10%;
@@ -51,7 +51,7 @@ export const DesignedBy = styled.p`
   display: flex;
   align-items: center;
 
-  font-family: "Montserrat";
+  font-family: 'Poppins';
   font-size: 16px;
   font-weight: 500;
   font-style: italic;
@@ -83,7 +83,7 @@ export const DesignedBy = styled.p`
 `;
 
 export const Icons8 = styled.p`
-  font-family: "Montserrat";
+  font-family: 'Poppins';
   font-size: 14px;
   font-weight: 300;
   font-style: italic;

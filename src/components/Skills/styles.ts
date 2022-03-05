@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const SkillType = styled.h1`
   display: flex;
   align-items: center;
 
-  font-family: "Montserrat";
+  font-family: 'Poppins';
   font-size: 24px;
   font-weight: 900;
 
@@ -61,7 +61,7 @@ export const Skill = styled.p`
   display: flex;
   align-items: center;
 
-  font-family: "Montserrat";
+  font-family: 'Poppins';
   font-size: 20px;
   font-weight: 400;
 

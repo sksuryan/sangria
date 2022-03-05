@@ -22,7 +22,7 @@ const Projects = () => {
       <ProjectsContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role='img' aria-label='fire emoji'>
+            <span role='img' className='emoji' aria-label='fire emoji'>
               🔥
             </span>{' '}
             autoflow
@@ -62,7 +62,7 @@ const Projects = () => {
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role='img' aria-label='hearts emoji'>
+            <span role='img' className='emoji' aria-label='hearts emoji'>
               💕
             </span>{' '}
             good vibes only
@@ -103,7 +103,7 @@ const Projects = () => {
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role='img' aria-label='music emoji'>
+            <span role='img' className='emoji' aria-label='music emoji'>
               🎶
             </span>{' '}
             flyrics
@@ -134,7 +134,7 @@ const Projects = () => {
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role='img' aria-label='heart face emoji'>
+            <span role='img' className='emoji' aria-label='heart face emoji'>
               🥰
             </span>{' '}
             cheery
@@ -164,7 +164,7 @@ const Projects = () => {
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role='img' aria-label='devil face emoji'>
+            <span role='img' className='emoji' aria-label='devil face emoji'>
               😈
             </span>{' '}
             evil in jaffar
@@ -195,7 +195,7 @@ const Projects = () => {
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role='img' aria-label='robot face emoji'>
+            <span role='img' className='emoji' aria-label='robot face emoji'>
               🤖
             </span>{' '}
             monday-api
@@ -243,7 +243,7 @@ const Projects = () => {
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role='img' aria-label='face mask emoji'>
+            <span role='img' className='emoji' aria-label='face mask emoji'>
               😷
             </span>{' '}
             coviz

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -17,7 +17,7 @@ export const Container = styled.div`
 `;
 
 export const Hello = styled.h1`
-  font-family: "Montserrat";
+  font-family: 'Poppins';
   font-size: 24px;
   font-weight: 300;
   font-style: italic;
@@ -34,7 +34,7 @@ export const Hello = styled.h1`
 `;
 
 export const Name = styled.h1`
-  font-family: "Montserrat";
+  font-family: 'Poppins';
   font-size: 42px;
   font-weight: 900;
 
@@ -51,7 +51,7 @@ export const Name = styled.h1`
 `;
 
 export const Details = styled.p`
-  font-family: "Montserrat";
+  font-family: 'Poppins';
   font-size: 18px;
   font-weight: 400;
 

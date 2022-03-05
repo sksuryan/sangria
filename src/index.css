@@ -9,9 +9,13 @@ html {
   scroll-behavior: smooth;
 }
 
+span.emoji {
+  height: 24px;
+}
+
 img.emoji {
   width: 24px;
   height: 24px;
 
-  margin: 0 8px;
+  margin-right: 0.75rem;
 }
