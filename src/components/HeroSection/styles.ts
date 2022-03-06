@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -74,15 +74,27 @@ export const Details = styled.p`
   }
 `;
 
+const gradientAnimation = keyframes`
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+`;
+
 export const NameSpan = styled.span`
   display: inline-block;
   line-break: strict;
 
-  animation: gradientAnimation 4s ease-in-out infinite alternate;
+  animation: ${gradientAnimation} 4s ease-in-out infinite alternate;
   user-select: none;
 
-  background: linear-gradient(to right, #7f00ff, #b622c9);
-  /* background-size: 400%; */
+  background: linear-gradient(90deg, #4614a8, #8e2de2);
+  background-size: 400%;
 
   -webkit-background-clip: text;
   background-clip: text;
