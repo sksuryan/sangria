@@ -16,7 +16,7 @@ const Footer = () => {
         <span className='emoji' role='img' aria-label='heart emoji'>
           ❤️
         </span>{' '}
-        by @sksuryan
+        by @0xSaurabh
       </DesignedBy>
       <Icons8>
         icons by{' '}
