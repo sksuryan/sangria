@@ -77,5 +77,14 @@ export const Details = styled.p`
 export const NameSpan = styled.span`
   display: inline-block;
   line-break: strict;
-  color: #5a37c3;
+
+  animation: gradientAnimation 4s ease-in-out infinite alternate;
+  user-select: none;
+
+  background: linear-gradient(to right, #7f00ff, #b622c9);
+  /* background-size: 400%; */
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;

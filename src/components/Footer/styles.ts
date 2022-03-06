@@ -61,6 +61,10 @@ export const DesignedBy = styled.p`
 
   text-align: center;
 
+  span.emoji {
+    margin-left: 0.75rem;
+  }
+
   @media (max-width: 768px) {
     font-size: 14px;
     padding-top: 8px;
@@ -68,10 +72,6 @@ export const DesignedBy = styled.p`
 
   @media (max-width: 385px) {
     flex-direction: column;
-
-    & span {
-      margin: 6px;
-    }
   }
 
   & span {
