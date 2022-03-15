@@ -52,11 +52,9 @@ export const Name = styled.h1`
 
 export const Details = styled.p`
   font-family: 'Poppins';
-  font-size: 18px;
   font-weight: 400;
 
   width: 42%;
-  text-align: justify;
   /* text-align: center; */
 
   margin-bottom: 16px;
@@ -68,7 +66,6 @@ export const Details = styled.p`
   }
 
   @media (max-width: 450px) {
-    font-size: 16px;
     width: 90%;
     text-align: initial;
   }

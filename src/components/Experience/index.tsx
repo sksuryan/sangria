@@ -9,9 +9,9 @@ const Details = [
     role: 'Full Stack Developer Intern',
     dates: 'Sept’21 – till this date // New Delhi, India',
     details: [
-      '- Built responsive UIs for the AfterShoot app using React, SCSS & Electron',
-      '-	Worked on the state management of the AfterShoot app using Redux.',
-      '-	Worked on improving the overall performance of AfterShoot app using React & Redux Dev Tools.',
+      '- Built multiple responsive components for the AfterShoot app using React, TypeScript & SCSS',
+      '- Worked on the revamping the state management of the AfterShoot app using Redux.',
+      '- Worked on improving the overall performance & reducing rerenders of AfterShoot app.',
     ],
   },
   {
@@ -19,9 +19,9 @@ const Details = [
     role: 'Frontend Developer Intern',
     dates: 'May’21 – Aug’21 // New Delhi, India',
     details: [
-      '-	Built UI components & Worked on the redesign of the Coinvise platform using NextJS, TypeScript, React, Tailwind.',
-      '-	Worked on integrating the frontend with the backend & GraphQL server.',
-      '-	Worked on integrating Ethereum Smart Contracts for the platform using Web3JS.',
+      '- Built UI components & worked on the redesign of the Coinvise platform using NextJS, TypeScript, React, Tailwind.',
+      '- Worked on integrating the frontend with the backend & GraphQL server.',
+      '- Worked on integrating Ethereum Smart Contracts for the platform using Web3JS.',
     ],
   },
   {
@@ -29,7 +29,7 @@ const Details = [
     role: 'Software Development Intern',
     dates: 'Jun’21 – Jul’21 // New Delhi, India',
     details: [
-      '-	Worked on the building UIs & state management of an internal tool using React, Redux, Bootstrap. ',
+      '- Worked on the building components & state management of an internal tool using React, Redux, Bootstrap. ',
     ],
   },
   {
@@ -37,8 +37,8 @@ const Details = [
     role: 'Open-Source Contributor',
     dates: 'Mar’21',
     details: [
-      '-	Made open-source contributions to Joomla CMS.',
-      '-	12 PRs merged. ',
+      '- Made open-source contributions to Joomla CMS.',
+      '- 12 PRs merged. ',
     ],
   },
   {
@@ -46,7 +46,7 @@ const Details = [
     role: 'MLH Fellow (Batch 1)',
     dates: 'Oct’21 – Dec’20 // New Delhi, India',
     details: [
-      '-	Built multiple projects with various tech stacks including React Native, React, SCSS, Node. (Blog)',
+      '- Built multiple projects with various tech stacks including React Native, React, SCSS, Node. (Blog)',
     ],
   },
 ];
