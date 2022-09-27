@@ -55,11 +55,13 @@ export const Details = styled.p`
 
   @media (max-width: 1024px) {
     width: 75%;
+    font-size: 16px;
   }
 
   @media (max-width: 450px) {
     width: 90%;
     text-align: initial;
+    font-size: 14px;
   }
 `;
 
