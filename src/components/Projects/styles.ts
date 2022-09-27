@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
   position: relative;
@@ -10,7 +10,7 @@ export const ProjectsContainer = styled.div`
   padding: 32px;
 
   justify-content: space-around;
-  gap: 48px;
+  gap: 28px;
 
   @media (max-width: 1525px) {
     grid-template-columns: 1fr 1fr;
@@ -28,26 +28,21 @@ export const ProjectContainer = styled.div`
 
   height: 100%;
 
-  background-color: rgba(255, 255, 255, 0.6);
   border-bottom-right-radius: 50px;
-  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.1);
+  border: 1px solid black;
 
-  padding: 48px;
-
-  @media (max-width: 1024px) {
-    padding: 36px;
-  }
+  padding: 24px;
 `;
 
 export const ProjectName = styled.p`
   display: flex;
   align-items: center;
 
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 20px;
   font-weight: 500;
 
-  padding-bottom: 16px;
+  /* margin-bottom: 12px; */
 
   margin: 8px 0;
 
@@ -61,7 +56,7 @@ export const ProjectName = styled.p`
 `;
 
 export const ProjectDetails = styled.p`
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 16px;
   font-weight: 400;
 
@@ -69,9 +64,7 @@ export const ProjectDetails = styled.p`
 
   width: 100%;
 
-  margin: 8px 0;
-
-  padding: 8px 0px;
+  margin: 12px 0;
 
   color: #2e2e2e;
 

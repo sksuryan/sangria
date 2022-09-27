@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -17,24 +17,16 @@ export const Container = styled.div`
 `;
 
 export const Hello = styled.h1`
-  font-family: 'Poppins';
-  font-size: 24px;
+  font-family: "Poppins";
+  font-size: 18px;
   font-weight: 300;
   font-style: italic;
 
   margin: 8px 0;
-
-  @media (max-width: 768px) {
-    font-size: 22px;
-  }
-
-  @media (max-width: 450px) {
-    font-size: 20px;
-  }
 `;
 
 export const Name = styled.h1`
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 42px;
   font-weight: 900;
 
@@ -51,7 +43,7 @@ export const Name = styled.h1`
 `;
 
 export const Details = styled.p`
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 400;
 
   width: 42%;

@@ -9,6 +9,15 @@ html {
   scroll-behavior: smooth;
 }
 
+span.helloEmoji {
+  height: 24px;
+  padding-left: 8px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 span.emoji {
   height: 24px;
 }

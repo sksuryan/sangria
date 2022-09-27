@@ -7,8 +7,8 @@ const HeroSection = () => {
   return (
     <Container id="HeroSection">
       <Hello>
-        hello there
-        <span role="img" aria-label="hello emoji">
+        hey there
+        <span className="helloEmoji" role="img" aria-label="hello emoji">
           👋
         </span>
       </Hello>
@@ -16,9 +16,8 @@ const HeroSection = () => {
         I'm <NameSpan>Saurabh Kumar Suryan</NameSpan>
       </Name>
       <Details>
-        A wanna be lifelong learner, who is passionate about new technologies
-        and building things that interests him, currently pursuing B. Tech in
-        CSE.
+        a tinkerer // perfectionist // who loves over engineering // building
+        beautiful UIs // often found sipping chai over good music
       </Details>
       <SocialMedia />
     </Container>
