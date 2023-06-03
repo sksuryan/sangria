@@ -2,7 +2,6 @@ import React from "react";
 
 import { Container, Title } from "../globalStyles";
 import { SkillContainer, Skill as SkillStyle } from "./styles";
-import useLazyLoad from "../../hooks/useLazyLoad";
 import Twemoji from "../Twemoji";
 
 const SkillsArr = [
