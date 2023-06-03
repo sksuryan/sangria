@@ -2,15 +2,14 @@ import React from "react";
 
 import { Container, Hello, Name, Details, NameSpan } from "./styles";
 import SocialMedia from "../SocialMedia";
+import Twemoji from "../Twemoji";
 
 const HeroSection = () => {
   return (
     <Container id="HeroSection">
       <Hello>
         hey there
-        <span className="helloEmoji" role="img" aria-label="hello emoji">
-          👋
-        </span>
+        <Twemoji className="helloEmoji" emoji="👋" />
       </Hello>
       <Name>
         I'm <NameSpan>Saurabh Kumar Suryan</NameSpan>

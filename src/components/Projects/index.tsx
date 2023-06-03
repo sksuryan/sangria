@@ -1,31 +1,36 @@
-import React from 'react';
+import React from "react";
 
-import { Container, Title } from '../globalStyles';
+import { Container, Title } from "../globalStyles";
 import {
   ProjectContainer,
   ProjectDetails,
   ProjectLinks,
   ProjectName,
   ProjectsContainer,
-} from './styles';
+} from "./styles";
+import useLazyLoad from "../../hooks/useLazyLoad";
+import Twemoji from "../Twemoji";
 
 const Projects = () => {
+  const { mounted } = useLazyLoad("lazy-loading-projects");
+
+  if (!mounted) {
+    return <div style={{ height: "300px" }} id={"lazy-loading-projects"} />;
+  }
+
   return (
     <Container>
       <Title>
         <img
-          src='https://img.icons8.com/bubbles/100/000000/rocket.png'
-          alt='rocket icon'
-        />{' '}
+          src="https://img.icons8.com/bubbles/100/000000/rocket.png"
+          alt="rocket icon"
+        />{" "}
         <p>Projects</p>
       </Title>
       <ProjectsContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role='img' className='emoji' aria-label='fire emoji'>
-              🔥
-            </span>{' '}
-            autoflow
+            <Twemoji emoji="🔥" /> autoflow
           </ProjectName>
           <ProjectDetails>
             a CLI tool to jump to multiple projects from anywhere in the
@@ -34,38 +39,35 @@ const Projects = () => {
             less commands.
           </ProjectDetails>
           <ProjectDetails>
-            built using: <span className='highlight'>python</span>,{' '}
-            <span className='highlight'>click.py</span>
+            built using: <span className="highlight">python</span>,{" "}
+            <span className="highlight">click.py</span>
           </ProjectDetails>
           <ProjectLinks>
             <a
-              href='https://github.com/MLH-Fellowship/autoflow'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://github.com/MLH-Fellowship/autoflow"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                src='https://img.icons8.com/ios/64/000000/github.png'
-                alt='github'
+                src="https://img.icons8.com/ios/64/000000/github.png"
+                alt="github"
               />
             </a>
             <a
-              href='https://pypi.org/project/python-af/'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://pypi.org/project/python-af/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                src='https://img.icons8.com/ios/96/000000/link--v1.png'
-                alt='link to the project'
+                src="https://img.icons8.com/ios/96/000000/link--v1.png"
+                alt="link to the project"
               />
             </a>
           </ProjectLinks>
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role='img' className='emoji' aria-label='hearts emoji'>
-              💕
-            </span>{' '}
-            good vibes only
+            <Twemoji emoji="💕" /> good vibes only
           </ProjectName>
           <ProjectDetails>
             Good Vibes Only delivers daily positive news and wholesome content
@@ -74,39 +76,36 @@ const Projects = () => {
             spirit.
           </ProjectDetails>
           <ProjectDetails>
-            built using: <span className='highlight'>node (express, ejs)</span>,{' '}
-            <span className='highlight'>mongoDB</span>,{' '}
-            <span className='highlight'>python</span>
+            built using: <span className="highlight">node (express, ejs)</span>,{" "}
+            <span className="highlight">mongoDB</span>,{" "}
+            <span className="highlight">python</span>
           </ProjectDetails>
           <ProjectLinks>
             <a
-              href='https://github.com/MLH-Fellowship/Good-Vibes-Only'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://github.com/MLH-Fellowship/Good-Vibes-Only"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                src='https://img.icons8.com/ios/64/000000/github.png'
-                alt='github'
+                src="https://img.icons8.com/ios/64/000000/github.png"
+                alt="github"
               />
             </a>
             <a
-              href='https://testsfront.herokuapp.com/'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://testsfront.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                src='https://img.icons8.com/ios/96/000000/link--v1.png'
-                alt='link to the project'
+                src="https://img.icons8.com/ios/96/000000/link--v1.png"
+                alt="link to the project"
               />
             </a>
           </ProjectLinks>
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role='img' className='emoji' aria-label='music emoji'>
-              🎶
-            </span>{' '}
-            flyrics
+            <Twemoji emoji="🎶" /> flyrics
           </ProjectName>
           <ProjectDetails>
             Did you ever want to sing along to a song but don't know the lyrics?
@@ -115,29 +114,26 @@ const Projects = () => {
             databases just to find out the lyrics to a song.
           </ProjectDetails>
           <ProjectDetails>
-            built using: <span className='highlight'>react native</span>,{' '}
-            <span className='highlight'>python (flask, spleeter)</span>,{' '}
-            <span className='highlight'>google speech to text api</span>
+            built using: <span className="highlight">react native</span>,{" "}
+            <span className="highlight">python (flask, spleeter)</span>,{" "}
+            <span className="highlight">google speech to text api</span>
           </ProjectDetails>
           <ProjectLinks>
             <a
-              href='https://github.com/AhadKhan98/Flyrics'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://github.com/AhadKhan98/Flyrics"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                src='https://img.icons8.com/ios/64/000000/github.png'
-                alt='github'
+                src="https://img.icons8.com/ios/64/000000/github.png"
+                alt="github"
               />
             </a>
           </ProjectLinks>
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role='img' className='emoji' aria-label='heart face emoji'>
-              🥰
-            </span>{' '}
-            cheery
+            <Twemoji emoji="🥰" /> cheery
           </ProjectName>
           <ProjectDetails>
             Cheery is a wholesome bot for developers which periodically sends
@@ -145,29 +141,26 @@ const Projects = () => {
             Discord Server.
           </ProjectDetails>
           <ProjectDetails>
-            built using:{' '}
-            <span className='highlight'>python(discord.py, flask)</span>,{' '}
-            <span className='highlight'>mongoDB</span>,{' '}
+            built using:{" "}
+            <span className="highlight">python(discord.py, flask)</span>,{" "}
+            <span className="highlight">mongoDB</span>,{" "}
           </ProjectDetails>
           <ProjectLinks>
             <a
-              href='https://github.com/0xSaurabh/Cheery'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://github.com/0xSaurabh/Cheery"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                src='https://img.icons8.com/ios/64/000000/github.png'
-                alt='github'
+                src="https://img.icons8.com/ios/64/000000/github.png"
+                alt="github"
               />
             </a>
           </ProjectLinks>
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role='img' className='emoji' aria-label='devil face emoji'>
-              😈
-            </span>{' '}
-            evil in jaffar
+            <Twemoji emoji="😈" /> evil in jaffar
           </ProjectName>
           <ProjectDetails>
             Evil King of Jaffar is the greatest known servant of evil spirits to
@@ -178,27 +171,24 @@ const Projects = () => {
             Quest to defeat the EVIL IN JAFFAR!
           </ProjectDetails>
           <ProjectDetails>
-            built using: <span className='highlight'>unity & c#</span>
+            built using: <span className="highlight">unity & c#</span>
           </ProjectDetails>
           <ProjectLinks>
             <a
-              href='https://github.com/MLH-Fellowship/Evil-in-Jaffar'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://github.com/MLH-Fellowship/Evil-in-Jaffar"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                src='https://img.icons8.com/ios/64/000000/github.png'
-                alt='github'
+                src="https://img.icons8.com/ios/64/000000/github.png"
+                alt="github"
               />
             </a>
           </ProjectLinks>
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role='img' className='emoji' aria-label='robot face emoji'>
-              🤖
-            </span>{' '}
-            monday-api
+            <Twemoji emoji="🤖" /> monday-api
           </ProjectName>
           <ProjectDetails>
             API for Telegram Bot that automates attendance for Amitians by
@@ -206,47 +196,44 @@ const Projects = () => {
             to the student.
           </ProjectDetails>
           <ProjectDetails>
-            built using: <span className='highlight'>python, flask & BS4</span>
+            built using: <span className="highlight">python, flask & BS4</span>
           </ProjectDetails>
           <ProjectLinks>
             <a
-              href='https://github.com/0xSaurabh/monday-api'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://github.com/0xSaurabh/monday-api"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                src='https://img.icons8.com/ios/64/000000/github.png'
-                alt='github'
+                src="https://img.icons8.com/ios/64/000000/github.png"
+                alt="github"
               />
             </a>
             <a
-              href='https://thecodelife.science.blog/2020/08/07/automating-my-attendance-with-python/'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://thecodelife.science.blog/2020/08/07/automating-my-attendance-with-python/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                src='https://img.icons8.com/wired/64/000000/wordpress.png'
-                alt='link to the blog'
+                src="https://img.icons8.com/wired/64/000000/wordpress.png"
+                alt="link to the blog"
               />
             </a>
             <a
-              href='https://api-monday.herokuapp.com/'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://api-monday.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                src='https://img.icons8.com/ios/96/000000/link--v1.png'
-                alt='link to the project'
+                src="https://img.icons8.com/ios/96/000000/link--v1.png"
+                alt="link to the project"
               />
             </a>
           </ProjectLinks>
         </ProjectContainer>
         <ProjectContainer>
           <ProjectName>
-            <span role='img' className='emoji' aria-label='face mask emoji'>
-              😷
-            </span>{' '}
-            coviz
+            <Twemoji emoji="😷" /> coviz
           </ProjectName>
           <ProjectDetails>
             CoViz. is a data visualization for COVID-19 data from around the
@@ -254,37 +241,37 @@ const Projects = () => {
             about-corona.net.
           </ProjectDetails>
           <ProjectDetails>
-            built using: <span className='highlight'>react, d3.js</span>
+            built using: <span className="highlight">react, d3.js</span>
           </ProjectDetails>
           <ProjectLinks>
             <a
-              href='https://github.com/0xSaurabh/covid-19-viz'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://github.com/0xSaurabh/covid-19-viz"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                src='https://img.icons8.com/ios/64/000000/github.png'
-                alt='github'
+                src="https://img.icons8.com/ios/64/000000/github.png"
+                alt="github"
               />
             </a>
             <a
-              href='https://thecodelife.science.blog/2020/05/01/my-first-data-visualization-project/'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://thecodelife.science.blog/2020/05/01/my-first-data-visualization-project/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                src='https://img.icons8.com/wired/64/000000/wordpress.png'
-                alt='link to the blog'
+                src="https://img.icons8.com/wired/64/000000/wordpress.png"
+                alt="link to the blog"
               />
             </a>
             <a
-              href='https://cviz.netlify.app/'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="https://cviz.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                src='https://img.icons8.com/ios/96/000000/link--v1.png'
-                alt='link to the project'
+                src="https://img.icons8.com/ios/96/000000/link--v1.png"
+                alt="link to the project"
               />
             </a>
           </ProjectLinks>

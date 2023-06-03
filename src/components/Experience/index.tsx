@@ -2,6 +2,8 @@ import React from "react";
 
 import { Container, Title } from "../globalStyles";
 import { XPContainer, XP } from "./styles";
+import useLazyLoad from "../../hooks/useLazyLoad";
+import Twemoji from "../Twemoji";
 
 const Details = [
   {
@@ -70,18 +72,15 @@ interface XPItemProps {
 const XPItem: React.FC<XPItemProps> = (props) => (
   <XP>
     <p className="title">
-      <span role="img" className="emoji" aria-label="sparkles emoji">
-        ✨
-      </span>{" "}
-      {props.title}
+      <Twemoji emoji="✨" /> {props.title}
     </p>
     <p className="role">{props.role}</p>
     <p className="dates">
       <span className="emoji" />
       {props.dates}
     </p>
-    {props.details.map((detail) => (
-      <p className="details">
+    {props.details.map((detail, key) => (
+      <p key={key} className="details">
         <span className="emoji" />
         {detail}
       </p>
@@ -90,18 +89,25 @@ const XPItem: React.FC<XPItemProps> = (props) => (
 );
 
 const Experience = () => {
+  const { mounted } = useLazyLoad("lazy-loading-exp");
+
+  if (!mounted) {
+    return <div style={{ height: "300px" }} id={"lazy-loading-exp"} />;
+  }
+
   return (
     <Container>
       <Title>
         <img
-          src="https://img.icons8.com/external-flat-geotatah/64/000000/external-experience-sales-incentive-compensation-flat-flat-geotatah.png"
+          src="https://img.icons8.com/bubbles/100/internship.png"
           alt="Experience Icon"
         />
         <p>Experience</p>
       </Title>
       <XPContainer>
-        {Details.map((detail) => (
+        {Details.map((detail, key) => (
           <XPItem
+            key={key}
             title={detail.title}
             role={detail.role}
             dates={detail.dates}

@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
   position: sticky;
@@ -32,8 +32,9 @@ const gradientAnimation = keyframes`
 
 export const Logo = styled.a`
   position: relative;
-  font-family: 'lilita one';
-  font-size: 24px;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 800;
   color: black;
 
   text-decoration: none;
@@ -52,6 +53,6 @@ export const Logo = styled.a`
   -webkit-text-fill-color: transparent;
 
   @media (max-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 `;

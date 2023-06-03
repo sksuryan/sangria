@@ -1,22 +1,24 @@
-import React from 'react';
+import React from "react";
 
-import { Container, Title } from '../globalStyles';
-import { SkillContainer, Skill as SkillStyle } from './styles';
+import { Container, Title } from "../globalStyles";
+import { SkillContainer, Skill as SkillStyle } from "./styles";
+import useLazyLoad from "../../hooks/useLazyLoad";
+import Twemoji from "../Twemoji";
 
 const SkillsArr = [
-  'TypeScript',
-  'NextJS',
-  'React',
-  'Redux',
-  'GraphQL',
-  'SASS',
-  'Webpack',
-  'Node',
-  'Git & GitHub',
-  'Docker',
-  'Firebase',
-  'MongoDB',
-  'SQL',
+  "TypeScript",
+  "NextJS",
+  "React",
+  "Redux",
+  "GraphQL",
+  "SASS",
+  "Webpack",
+  "Node",
+  "Git & GitHub",
+  "Docker",
+  "Firebase",
+  "MongoDB",
+  "SQL",
 ];
 
 interface SkillProps {
@@ -25,26 +27,23 @@ interface SkillProps {
 
 const Skill: React.FC<SkillProps> = ({ skill }) => (
   <SkillStyle>
-    <span role='img' className='emoji' aria-label='sparkles emoji'>
-      ✨
-    </span>{' '}
-    {skill}
+    <Twemoji emoji="✨" /> {skill}
   </SkillStyle>
 );
 
 const Skills = () => {
   return (
-    <Container>
+    <Container className="skills">
       <Title>
         <img
-          src='https://img.icons8.com/bubbles/100/000000/laptop.png'
-          alt='laptop icon'
-        />{' '}
+          src="https://img.icons8.com/external-filled-color-icons-papa-vector/156/external-Skills-Sharing-technology-transfer-filled-color-icons-papa-vector.png"
+          alt="laptop icon"
+        />{" "}
         <p>Skills</p>
       </Title>
       <SkillContainer>
         {SkillsArr.map((skill) => (
-          <Skill skill={skill} />
+          <Skill key={skill} skill={skill} />
         ))}
       </SkillContainer>
     </Container>
