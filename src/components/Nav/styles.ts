@@ -3,18 +3,11 @@ import styled, { keyframes } from "styled-components";
 export const Container = styled.div`
   position: sticky;
   display: flex;
-  height: 8vh;
   width: 100%;
-
-  background-color: white;
 
   top: 0;
 
-  border-bottom: 1px solid #d8e3e7;
-
-  justify-content: space-between;
-  align-items: center;
-
+  backdrop-filter: blur(12px);
   z-index: 1;
 `;
 
@@ -27,6 +20,24 @@ const gradientAnimation = keyframes`
   }
   100% {
     background-position: 50% 100%;
+  }
+`;
+
+export const InnerContainer = styled.div`
+  width: 75%;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  height: 6vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #d8e3e7;
+
+  @media (max-width: 1024px) {
+    width: 90%;
   }
 `;
 

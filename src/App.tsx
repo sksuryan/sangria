@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import Nav from './components/Nav';
-import HeroSection from './components/HeroSection';
-import Footer from './components/Footer';
-import Experience from './components/Experience';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
+import Nav from "./components/Nav";
+import HeroSection from "./components/HeroSection";
+import Footer from "./components/Footer";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 const Container = styled.div`
   position: relative;
@@ -23,16 +23,18 @@ const Container = styled.div`
 
 const App = () => {
   return (
-    <Container>
+    <>
       <Nav />
-      <HeroSection />
+      <Container>
+        <HeroSection />
 
-      <Skills />
-      <Experience />
-      <Projects />
+        <Skills />
+        <Experience />
+        <Projects />
 
-      <Footer />
-    </Container>
+        <Footer />
+      </Container>
+    </>
   );
 };
 

@@ -1,11 +1,13 @@
 import React from "react";
 
-import { Container, Logo } from "./styles";
+import { Container, InnerContainer, Logo } from "./styles";
 
 const Nav = () => {
   return (
     <Container>
-      <Logo href="/">@sksuryan</Logo>
+      <InnerContainer>
+        <Logo href="/">@sksuryan</Logo>
+      </InnerContainer>
     </Container>
   );
 };
