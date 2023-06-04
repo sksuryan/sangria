@@ -12,9 +12,6 @@ import Skills from "../sections/Skills";
 import Experience from "../sections/Experience";
 import Projects from "../sections/Project";
 
-// init prefetching
-import { init as initPrefetch } from "@helpers/prefetch";
-
 const Container = styled.div`
   position: relative;
   z-index: 0;
@@ -29,13 +26,6 @@ const Container = styled.div`
 `;
 
 const App = () => {
-  // prefetch rest of the images
-  useEffect(() => {
-    if (document) {
-      initPrefetch();
-    }
-  }, []);
-
   return (
     <Container>
       <Head>
