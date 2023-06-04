@@ -42,4 +42,12 @@ const App = () => {
   );
 };
 
+/**
+ * since netlify doesn't support ttl for cached images, we're using static props
+ * to mimic similar behavior
+ */
+export async function getStaticProps() {
+  return { revalidate: 86400 };
+}
+
 export default App;
