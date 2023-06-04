@@ -1,9 +1,8 @@
 import React from "react";
+import styled from "styled-components";
 
-import { Container, Title } from "../globalStyles";
-import { XPContainer, XP } from "./styles";
-import useLazyLoad from "../../hooks/useLazyLoad";
-import Twemoji from "../Twemoji";
+import Twemoji from "@components/Twemoji";
+import { Container, Title } from "@styles/global-styles";
 
 const Details = [
   {
@@ -62,6 +61,78 @@ const Details = [
   },
 ];
 
+export const XPContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  padding: 16px;
+
+  @media (max-width: 550px) {
+    padding: 0;
+  }
+`;
+
+export const XP = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 1.5rem 0;
+
+  .title {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .details,
+  .dates,
+  .role {
+    font-weight: 400;
+    font-size: 16px;
+
+    margin-left: calc(24px + 0.75rem);
+  }
+
+  .role {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+
+  .dates {
+    margin-bottom: 1rem;
+    color: #6e6e6e;
+  }
+
+  .details {
+    color: #2e2e2e;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  @media (max-width: 768px) {
+    .title {
+      font-size: 18px;
+    }
+
+    .details,
+    .dates,
+    .role {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .title {
+      font-size: 16px;
+    }
+  }
+`;
+
 interface XPItemProps {
   title: string;
   role: string;
@@ -88,13 +159,7 @@ const XPItem: React.FC<XPItemProps> = (props) => (
   </XP>
 );
 
-const Experience = () => {
-  const { mounted } = useLazyLoad("lazy-loading-exp");
-
-  if (!mounted) {
-    return <div style={{ height: "300px" }} id={"lazy-loading-exp"} />;
-  }
-
+function Experience() {
   return (
     <Container>
       <Title>
@@ -117,6 +182,6 @@ const Experience = () => {
       </XPContainer>
     </Container>
   );
-};
+}
 
 export default Experience;

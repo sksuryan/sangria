@@ -1,33 +1,37 @@
 import { useEffect, useRef, useState } from "react";
 
-const useLazyLoad = (id: string) => {
+const useLazyLoad = (ref: React.MutableRefObject<HTMLDivElement | null>) => {
   const [mounted, setMounted] = useState(false);
-  const observer = useRef(
-    new IntersectionObserver((ins) => {
-      setMounted((state) => {
-        let updatedState = state;
-        ins.forEach((entry) => {
-          if (entry.target.id === id && entry.isIntersecting && !state) {
-            updatedState = true;
-          }
-        });
-
-        return updatedState;
-      });
-    })
-  );
 
   useEffect(() => {
-    const obs = observer.current;
-    const observable = document.getElementById(id);
-    if (observable) {
-      obs.observe(observable);
+    let observer: IntersectionObserver | null = null;
+    if (ref.current) {
+      observer = new IntersectionObserver((ins) => {
+        setMounted((state) => {
+          let updatedState = state;
+          ins.forEach((entry) => {
+            if (
+              entry.target.id === ref.current?.id &&
+              entry.isIntersecting &&
+              !state
+            ) {
+              updatedState = true;
+            }
+          });
+
+          return updatedState;
+        });
+      });
+
+      observer.observe(ref.current as Element);
     }
 
-    return () => obs.disconnect();
-  }, [id]);
-
-  console.log({ id, mounted });
+    return () => {
+      if (observer) {
+        observer.disconnect();
+      }
+    };
+  }, [ref.current]);
 
   return { mounted };
 };

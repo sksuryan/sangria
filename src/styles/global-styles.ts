@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
   height: max-content;
@@ -11,7 +11,7 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
-const gradientAnimation = keyframes`
+export const gradientAnimation = keyframes`
   0% {
     background-position: 0% 50%;
   }
@@ -27,7 +27,6 @@ export const Title = styled.div`
   display: flex;
   align-items: center;
 
-  font-family: 'Poppins';
   font-size: 36px;
   font-weight: 900;
 
@@ -35,7 +34,6 @@ export const Title = styled.div`
   padding-left: 12px;
 
   margin-bottom: 16px;
-  /* text-align: center; */
 
   animation: ${gradientAnimation} 4s ease-in-out infinite alternate;
   user-select: none;

@@ -1,6 +1,23 @@
 import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
 
-import { Container } from "./styles";
+export const Container = styled.div`
+  display: flex;
+
+  & img {
+    height: 32px;
+    width: 32px;
+    margin: 8px;
+  }
+
+  @media (max-width: 550px) {
+    & img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+`;
 
 interface LinkProps {
   href: string;
@@ -37,7 +54,7 @@ const linkData = [
 const Link: React.FC<LinkProps> = (props) => {
   return (
     <a href={props.href} target="_blank" rel="noopener noreferrer">
-      <img src={props.iconUri} alt={props.alt} />
+      <Image src={props.iconUri} alt={props.alt} width={32} height={32} />
     </a>
   );
 };

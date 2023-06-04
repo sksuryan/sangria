@@ -1,4 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import { gradientAnimation } from "@styles/global-styles";
+import React from "react";
+import styled from "styled-components";
 
 export const Container = styled.div`
   position: sticky;
@@ -9,18 +11,6 @@ export const Container = styled.div`
 
   backdrop-filter: blur(12px);
   z-index: 1;
-`;
-
-const gradientAnimation = keyframes`
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 50% 100%;
-  }
 `;
 
 export const InnerContainer = styled.div`
@@ -43,7 +33,7 @@ export const InnerContainer = styled.div`
 
 export const Logo = styled.a`
   position: relative;
-  font-family: "Poppins";
+
   font-size: 18px;
   font-weight: 800;
   color: black;
@@ -67,3 +57,15 @@ export const Logo = styled.a`
     font-size: 16px;
   }
 `;
+
+const Nav = () => {
+  return (
+    <Container>
+      <InnerContainer>
+        <Logo href="/">@sksuryan</Logo>
+      </InnerContainer>
+    </Container>
+  );
+};
+
+export default Nav;

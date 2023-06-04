@@ -1,11 +1,12 @@
 {
+  "extends": "./paths.json",
   "compilerOptions": {
     "noFallthroughCasesInSwitch": true,
     "target": "es5",
     "module": "esnext",
     "lib": ["DOM"],
     "allowJs": true,
-    "jsx": "react",
+    "jsx": "preserve",
     "strict": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -14,7 +15,14 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["src"]
+  "include": ["src", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }

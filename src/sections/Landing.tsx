@@ -1,4 +1,9 @@
-import styled, { keyframes } from "styled-components";
+import React from "react";
+import styled from "styled-components";
+
+import Twemoji from "@components/Twemoji";
+import SocialMedia from "@components/SocialMedia";
+import { gradientAnimation } from "@styles/global-styles";
 
 export const Container = styled.div`
   display: flex;
@@ -17,7 +22,6 @@ export const Container = styled.div`
 `;
 
 export const Hello = styled.h1`
-  font-family: "Poppins";
   font-size: 18px;
   font-weight: 300;
   font-style: italic;
@@ -26,12 +30,11 @@ export const Hello = styled.h1`
 `;
 
 export const Name = styled.h1`
-  font-family: "Poppins";
   font-size: 42px;
   font-weight: 900;
 
   margin-bottom: 16px;
-  /* text-align: center; */
+
   @media (max-width: 768px) {
     font-size: 36px;
   }
@@ -43,11 +46,9 @@ export const Name = styled.h1`
 `;
 
 export const Details = styled.p`
-  font-family: "Poppins";
   font-weight: 400;
 
   width: 42%;
-  /* text-align: center; */
 
   margin-bottom: 16px;
   padding-left: 12px;
@@ -65,18 +66,6 @@ export const Details = styled.p`
   }
 `;
 
-const gradientAnimation = keyframes`
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 50% 100%;
-  }
-`;
-
 export const NameSpan = styled.span`
   display: inline-block;
   line-break: strict;
@@ -91,3 +80,24 @@ export const NameSpan = styled.span`
   background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
+
+const Landing = () => {
+  return (
+    <Container id="HeroSection">
+      <Hello>
+        hey there
+        <Twemoji className="helloEmoji" emoji="👋" />
+      </Hello>
+      <Name>
+        I'm <NameSpan>Saurabh Kumar Suryan</NameSpan>
+      </Name>
+      <Details>
+        a tinkerer // perfectionist // who loves over engineering // building
+        beautiful UIs // often found sipping chai over good music
+      </Details>
+      <SocialMedia />
+    </Container>
+  );
+};
+
+export default Landing;

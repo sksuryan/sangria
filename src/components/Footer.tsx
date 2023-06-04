@@ -1,4 +1,7 @@
-import styled, { keyframes } from 'styled-components';
+import React from "react";
+import Twemoji from "./Twemoji";
+
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
   height: 10%;
@@ -51,7 +54,6 @@ export const DesignedBy = styled.p`
   display: flex;
   align-items: center;
 
-  font-family: 'Poppins';
   font-size: 16px;
   font-weight: 500;
   font-style: italic;
@@ -83,7 +85,6 @@ export const DesignedBy = styled.p`
 `;
 
 export const Icons8 = styled.p`
-  font-family: 'Poppins';
   font-size: 14px;
   font-weight: 300;
   font-style: italic;
@@ -107,3 +108,28 @@ export const Icons8 = styled.p`
     font-size: 14px;
   }
 `;
+
+const Footer = () => {
+  return (
+    <Container>
+      <a href="#HeroSection">
+        <img
+          className="up"
+          src="https://img.icons8.com/clouds/100/000000/up.png"
+          alt="back to top"
+        />
+      </a>
+      <DesignedBy>
+        designed with <Twemoji emoji="❤️" /> by @0xSaurabh
+      </DesignedBy>
+      <Icons8>
+        icons by{" "}
+        <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer">
+          icons8
+        </a>
+      </Icons8>
+    </Container>
+  );
+};
+
+export default Footer;
