@@ -10,6 +10,7 @@ module.exports = {
     },
   },
   images: {
+    minimumCacheTTL: 86400,
     remotePatterns: [
       {
         protocol: "https",
