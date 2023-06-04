@@ -47,7 +47,7 @@ const App = () => {
  * to mimic similar behavior
  */
 export async function getStaticProps() {
-  return { revalidate: 86400 };
+  return { props: { revalidate: 86400 } };
 }
 
 export default App;
