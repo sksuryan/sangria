@@ -13,7 +13,7 @@ const Twemoji: FC<Props> = ({ emoji, className }) => {
   return (
     <span className={`emoji ${className}`}>
       <img
-        src={`https://twemoji.maxcdn.com/v/latest/svg/${imageSrc}.svg`}
+        src={`https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/${imageSrc}.svg`}
         alt={emoji}
         loading="eager"
         className="emoji"

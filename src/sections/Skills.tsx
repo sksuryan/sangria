@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styled from "styled-components";
 
 import Twemoji from "@components/Twemoji";
@@ -72,9 +73,11 @@ const Skills = () => {
   return (
     <Container className="skills">
       <Title>
-        <img
+        <Image
           src="https://img.icons8.com/external-filled-color-icons-papa-vector/156/external-Skills-Sharing-technology-transfer-filled-color-icons-papa-vector.png"
           alt="laptop icon"
+          width={54}
+          height={54}
         />{" "}
         <p>Skills</p>
       </Title>

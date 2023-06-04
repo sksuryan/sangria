@@ -8,7 +8,7 @@ const poppins = Poppins({
   preload: true,
   weight: ["400", "500", "600", "700", "900"],
   variable: "--font-poppins",
-  subsets: ["devanagari"],
+  subsets: ["latin"],
   display: "swap",
 });
 

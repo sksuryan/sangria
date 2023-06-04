@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styled from "styled-components";
 
 import Twemoji from "@components/Twemoji";
@@ -163,9 +164,11 @@ function Experience() {
   return (
     <Container>
       <Title>
-        <img
+        <Image
           src="https://img.icons8.com/bubbles/100/internship.png"
           alt="Experience Icon"
+          width={54}
+          height={54}
         />
         <p>Experience</p>
       </Title>

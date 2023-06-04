@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styled from "styled-components";
 
 import Twemoji from "@components/Twemoji";
@@ -117,9 +118,11 @@ function Projects() {
   return (
     <Container>
       <Title>
-        <img
+        <Image
           src="https://img.icons8.com/bubbles/100/000000/rocket.png"
           alt="rocket icon"
+          width={54}
+          height={54}
         />{" "}
         <p>Projects</p>
       </Title>
