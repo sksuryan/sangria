@@ -169,6 +169,7 @@ function Experience() {
           alt="Experience Icon"
           width={54}
           height={54}
+          loading="lazy"
         />
         <p>Experience</p>
       </Title>

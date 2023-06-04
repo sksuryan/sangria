@@ -123,6 +123,7 @@ function Projects() {
           alt="rocket icon"
           width={54}
           height={54}
+          loading="lazy"
         />{" "}
         <p>Projects</p>
       </Title>

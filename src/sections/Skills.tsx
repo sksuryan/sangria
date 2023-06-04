@@ -78,6 +78,7 @@ const Skills = () => {
           alt="laptop icon"
           width={54}
           height={54}
+          loading="eager"
         />{" "}
         <p>Skills</p>
       </Title>
