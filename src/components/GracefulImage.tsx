@@ -26,9 +26,6 @@ const GracefulImage: React.FC<ImageProps> = (props) => {
   return (
     <StyledImage
       {...props}
-      placeholder="blur"
-      blurDataURL={FALLBACK_IMAGE}
-      onLoad={() => console.log("on load")}
       onLoadingComplete={() => setLoaded(true)}
       $loaded={loaded}
     />
