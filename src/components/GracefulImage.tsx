@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import Image, { ImageProps } from "next/image";
 import { FALLBACK_IMAGE } from "@helpers/constants";
 import { useState } from "react";
@@ -11,10 +11,13 @@ const fadeInAnimation = keyframes`
   }
 `;
 
+const animation = () => css`
+  animation: ${fadeInAnimation} 0.8s ease-in forwards;
+`;
+
 const StyledImage = styled(Image)<{ $loaded: boolean }>`
   opacity: ${(props) => (props.$loaded ? 0 : 1)};
-  animation: ${fadeInAnimation} 0.5s ease-in forwards;
-  transition: 0.5s ease-in;
+  ${(props) => props.$loaded && animation}
 `;
 
 const GracefulImage: React.FC<ImageProps> = (props) => {
