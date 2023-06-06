@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "next/image";
+import Image from "@components/GracefulImage";
 import { FALLBACK_IMAGE } from "@helpers/constants";
 
 export const Container = styled.div`
