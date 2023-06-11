@@ -1,6 +1,5 @@
 import styled, { keyframes, css } from "styled-components";
 import Image, { ImageProps } from "next/image";
-import { FALLBACK_IMAGE } from "@helpers/constants";
 import { useState } from "react";
 
 const fadeInAnimation = keyframes`
