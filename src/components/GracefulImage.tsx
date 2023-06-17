@@ -17,7 +17,7 @@ const animation = () => css`
 `;
 
 const StyledImage = styled(Image)<{ $loaded: boolean }>`
-  opacity: ${(props) => (props.$loaded ? 0 : 1)};
+  opacity: 0;
   ${(props) => props.$loaded && animation}
 `;
 
