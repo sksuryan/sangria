@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "@components/GracefulImage";
-import { FALLBACK_IMAGE } from "@helpers/constants";
 
 export const Container = styled.div`
   display: flex;
@@ -61,8 +60,6 @@ const Link: React.FC<LinkProps> = (props) => {
         width={32}
         height={32}
         loading="eager"
-        placeholder="blur"
-        blurDataURL={FALLBACK_IMAGE}
       />
     </a>
   );

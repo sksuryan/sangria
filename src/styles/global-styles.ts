@@ -1,3 +1,4 @@
+"use client";
 import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
@@ -47,6 +48,7 @@ export const Title = styled.div`
 
   & img {
     width: 50px;
+    height: auto;
     margin: 0 8px;
   }
 

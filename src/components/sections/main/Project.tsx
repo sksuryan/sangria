@@ -1,10 +1,11 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
 
 import Twemoji from "@components/Twemoji";
 import { Container, Title } from "@styles/global-styles";
-import withLazyLoading from "@components/withLazyLoading";
 
 export const ProjectsContainer = styled.div`
   position: relative;
@@ -119,7 +120,7 @@ function Projects() {
     <Container>
       <Title>
         <Image
-          src="https://img.icons8.com/bubbles/100/000000/rocket.png"
+          src="https://img.icons8.com/dusk/256/rocket--v1.png"
           alt="rocket icon"
           width={54}
           height={54}

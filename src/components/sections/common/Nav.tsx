@@ -1,6 +1,7 @@
-import { gradientAnimation } from "@styles/global-styles";
-import React from "react";
+"use client";
+
 import styled from "styled-components";
+import { gradientAnimation } from "@styles/global-styles";
 
 export const Container = styled.div`
   position: sticky;
