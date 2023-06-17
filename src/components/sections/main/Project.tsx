@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import styled from "styled-components";
 
 import Twemoji from "@components/Twemoji";
 import { Container, Title } from "@styles/global-styles";
+import GracefulImage from "@components/GracefulImage";
 
 export const ProjectsContainer = styled.div`
   position: relative;
@@ -119,7 +119,7 @@ function Projects() {
   return (
     <Container>
       <Title>
-        <Image
+        <GracefulImage
           src="https://img.icons8.com/dusk/256/rocket--v1.png"
           alt="rocket icon"
           width={54}

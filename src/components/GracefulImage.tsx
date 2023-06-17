@@ -13,7 +13,7 @@ const fadeInAnimation = keyframes`
 `;
 
 const animation = () => css`
-  animation: ${fadeInAnimation} 0.8s ease-in forwards;
+  animation: ${fadeInAnimation} 0.25s ease-in forwards;
 `;
 
 const StyledImage = styled(Image)<{ $loaded: boolean }>`

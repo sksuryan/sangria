@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import styled from "styled-components";
 
 import Twemoji from "@components/Twemoji";
+import GracefulImage from "@components/GracefulImage";
 import { Container, Title } from "@styles/global-styles";
 
 const SkillContainer = styled.div`
@@ -75,7 +75,7 @@ const Skills = () => {
   return (
     <Container className="skills">
       <Title>
-        <Image
+        <GracefulImage
           src="https://img.icons8.com/external-filled-color-icons-papa-vector/156/external-Skills-Sharing-technology-transfer-filled-color-icons-papa-vector.png"
           alt="laptop icon"
           width={54}

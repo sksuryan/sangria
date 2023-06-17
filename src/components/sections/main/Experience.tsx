@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import styled from "styled-components";
 
 import Twemoji from "@components/Twemoji";
+import GracefulImage from "@components/GracefulImage";
 import { Container, Title } from "@styles/global-styles";
 
 const Details = [
@@ -165,7 +165,7 @@ function Experience() {
   return (
     <Container>
       <Title>
-        <Image
+        <GracefulImage
           src="https://img.icons8.com/bubbles/100/internship.png"
           alt="Experience Icon"
           width={54}
