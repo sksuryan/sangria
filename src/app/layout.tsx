@@ -1,4 +1,5 @@
 import "@styles/index.css";
+import Head from "next/head";
 import StyledComponentsRegistry from "lib/registry";
 
 import Nav from "@components/sections/common/Nav";
@@ -22,12 +23,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
-        <StyledComponentsRegistry>
-          <Nav />
-          {children}
-          <Footer />
-        </StyledComponentsRegistry>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <body>
+        <main className={poppins.className}>
+          <StyledComponentsRegistry>
+            <Nav />
+            {children}
+            <Footer />
+          </StyledComponentsRegistry>
+        </main>
       </body>
     </html>
   );

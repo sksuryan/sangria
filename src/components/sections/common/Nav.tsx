@@ -11,6 +11,7 @@ export const Container = styled.div`
   top: 0;
 
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   z-index: 1;
 `;
 
