@@ -20,9 +20,9 @@ const SkillsShimmer = () => {
           <Twemoji emoji="✨" />{" "}
           <span
             style={{
-              height: "18px",
+              height: "16px",
               width: "96px",
-              margin: "7px 0px",
+              margin: "6px 0px",
               backgroundColor: "#e8e8e8",
             }}
           />

@@ -87,7 +87,7 @@ export const XP = styled.div`
     display: flex;
     align-items: center;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .details,
@@ -100,7 +100,7 @@ export const XP = styled.div`
   }
 
   .role {
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 0.25rem;
   }
 

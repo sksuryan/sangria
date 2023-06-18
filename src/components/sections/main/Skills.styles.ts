@@ -26,17 +26,13 @@ export const SkillItem = styled.p`
   display: flex;
   align-items: center;
 
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 28px;
   font-weight: 400;
 
   padding: 16px;
 
   @media (max-width: 768px) {
-    font-size: 18px;
-  }
-
-  @media (max-width: 450px) {
     font-size: 16px;
   }
 `;

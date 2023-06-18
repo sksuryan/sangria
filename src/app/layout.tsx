@@ -6,11 +6,11 @@ import Nav from "@components/sections/common/Nav";
 import Footer from "@components/sections/common/Footer";
 
 // font setup
-import { Poppins } from "next/font/google";
+import { Source_Sans_Pro } from "next/font/google";
 
-const poppins = Poppins({
+const poppins = Source_Sans_Pro({
   preload: true,
-  weight: ["400", "500", "600", "700", "900"],
+  weight: ["200", "300", "400", "600", "700", "900"],
   variable: "--font-poppins",
   subsets: ["latin"],
   display: "swap",

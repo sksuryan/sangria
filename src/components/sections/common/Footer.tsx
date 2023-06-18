@@ -57,7 +57,7 @@ export const DesignedBy = styled.p`
   align-items: center;
 
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   font-style: italic;
 
   padding: 24px 16px;

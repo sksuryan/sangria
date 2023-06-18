@@ -9,7 +9,7 @@ import { gradientAnimation } from "@styles/global-styles";
 
 export const Container = styled.div`
   display: flex;
-  height: 70vh;
+  height: 75vh;
   width: 100%;
 
   flex-direction: column;
@@ -17,10 +17,6 @@ export const Container = styled.div`
   justify-content: center;
 
   margin: 0 auto;
-
-  @media (max-width: 450px) {
-    height: 70vh;
-  }
 `;
 
 export const Hello = styled.h1`

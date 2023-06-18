@@ -40,7 +40,7 @@ export const ProjectName = styled.p`
   align-items: center;
 
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
 
   /* margin-bottom: 12px; */
 
@@ -77,7 +77,7 @@ export const ProjectDetails = styled.p`
   }
 
   .highlight {
-    font-weight: 500;
+    font-weight: 600;
     font-style: italic;
   }
 `;
