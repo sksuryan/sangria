@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import styled from "styled-components";
+import Image from "@components/GracefulImage";
 
 export const Container = styled.div`
   display: flex;

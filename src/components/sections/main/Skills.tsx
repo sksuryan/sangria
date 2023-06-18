@@ -8,7 +8,9 @@ import {
   SkillItem,
 } from "@components/sections/main/Skills.styles";
 import { dataSourceInstance } from "helpers/appwrite-client";
-import Image from "next/image";
+
+// components
+import Image from "@components/GracefulImage";
 
 const SkillsShimmer = () => {
   return (

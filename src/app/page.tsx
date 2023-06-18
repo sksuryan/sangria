@@ -8,6 +8,14 @@ import Experience from "@components/sections/main/Experience";
 
 // styles
 import { MainContainer } from "@styles/main";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "@sksuryan",
+};
+
+// revalidate data every 12 hours
+export const revalidate = 60 * 60 * 12;
 
 const App = () => {
   return (
