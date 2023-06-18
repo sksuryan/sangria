@@ -5,6 +5,20 @@ interface SkillsType extends Models.Document {
   skills: string[];
 }
 
+export interface ProjectType {
+  name: string;
+  description: string;
+  emoji: string;
+
+  tech: string[];
+
+  "github-url"?: string;
+  website?: string;
+  "blog-url"?: string;
+}
+
+type ProjectDocumentsType = ProjectType & Models.Document;
+
 type InitStatus = {
   status: "pending" | "success" | "failure";
   error: string | null;
@@ -81,8 +95,12 @@ class DataSource {
   public getProjects = cache(async () => {
     this.checkForErrors();
 
-    // fetch data here
-    return null;
+    const projectsRef = (await this.databases!.listDocuments(
+      this.dbId!,
+      this.projectsId
+    )) as Models.DocumentList<ProjectDocumentsType>;
+
+    return projectsRef.documents as ProjectType[];
   });
 }
 
