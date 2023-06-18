@@ -24,3 +24,5 @@ yarn-error.log*
 
 af-config.json
 .next
+.env
+.idea
