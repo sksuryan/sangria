@@ -1,6 +1,11 @@
 "use client";
 
-import React, { PropsWithChildren, useContext, useState } from "react";
+import React, {
+  PropsWithChildren,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import {
   ThemeProvider as TProvider,
   createGlobalStyle,
@@ -88,7 +93,9 @@ export const GlobalStyle = createGlobalStyle<ThemeType>`
 `;
 
 const ThemeProvider: React.FC<PropsWithChildren> = ({ children }) => {
-  const isDark = window.matchMedia("(prefers-color-scheme:dark)").matches;
+  const isDark = window
+    ? window.matchMedia("(prefers-color-scheme:dark)").matches
+    : false;
   const [theme, setTheme] = useState<Themes>(isDark ? "dark" : "light");
 
   return (
