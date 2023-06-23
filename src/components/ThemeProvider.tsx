@@ -60,6 +60,7 @@ export const GlobalStyle = createGlobalStyle<ThemeType>`
     padding: 0;
 
     box-sizing: border-box;
+    transition: color 0.6s ease, background-color 0.6s ease, filter 0.6s ease;
   }
 
   html {
@@ -93,10 +94,17 @@ export const GlobalStyle = createGlobalStyle<ThemeType>`
 `;
 
 const ThemeProvider: React.FC<PropsWithChildren> = ({ children }) => {
-  const isDark = window
-    ? window.matchMedia("(prefers-color-scheme:dark)").matches
-    : false;
-  const [theme, setTheme] = useState<Themes>(isDark ? "dark" : "light");
+  const [theme, setTheme] = useState<Themes>("light");
+
+  useEffect(() => {
+    setTheme(
+      typeof window !== "undefined"
+        ? window.matchMedia("(prefers-color-scheme:dark)").matches
+          ? "dark"
+          : "light"
+        : "light"
+    );
+  }, []);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
