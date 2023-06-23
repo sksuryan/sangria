@@ -51,7 +51,7 @@ const darkTheme: ThemeType = {
   textSecondary: "#c8c8c8",
   textDate: "#a8a8a8",
 
-  backgroundPrimary: "#121212",
+  backgroundPrimary: "#181818",
 };
 
 export const GlobalStyle = createGlobalStyle<ThemeType>`
