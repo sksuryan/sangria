@@ -12,6 +12,7 @@ import {
   ProjectsContainer,
 } from "@components/sections/main/Projects.styles";
 import { ProjectType, dataSourceInstance } from "helpers/appwrite-client";
+import { Link } from "@components/Link";
 
 const Project: React.FC<ProjectType> = (props) => {
   return (
@@ -31,32 +32,25 @@ const Project: React.FC<ProjectType> = (props) => {
       </ProjectDetails>
       <ProjectLinks>
         {props["github-url"] ? (
-          <a
+          <Link
             href={props["github-url"]}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="https://img.icons8.com/ios/64/000000/github.png"
-              alt="github"
-            />
-          </a>
+            iconUri="https://img.icons8.com/ios/64/000000/github.png"
+            alt="github"
+          />
         ) : null}
         {props.website ? (
-          <a href={props.website} target="_blank" rel="noopener noreferrer">
-            <img
-              src="https://img.icons8.com/ios/96/000000/link--v1.png"
-              alt="link to the project"
-            />
-          </a>
+          <Link
+            href={props["website"]}
+            iconUri="https://img.icons8.com/ios/96/000000/link--v1.png"
+            alt="link to project"
+          />
         ) : null}
         {props["blog-url"] ? (
-          <a href={props["blog-url"]} target="_blank" rel="noopener noreferrer">
-            <img
-              src="https://img.icons8.com/wired/64/000000/wordpress.png"
-              alt="link to the blog"
-            />
-          </a>
+          <Link
+            href={props["blog-url"]}
+            iconUri="https://img.icons8.com/wired/64/000000/wordpress.png"
+            alt="link to blog"
+          />
         ) : null}
       </ProjectLinks>
     </ProjectContainer>

@@ -21,6 +21,8 @@ export const Container = styled.div`
 
   /* border-top-left-radius: 50px; */
 
+  color: ${(props) => props.theme.textPrimary};
+
   padding: 0 5vw;
 
   @media (min-width: 768px) {
@@ -94,16 +96,16 @@ export const Icons8 = styled.p`
   padding-bottom: 16px;
 
   & > a {
-    color: black;
+    color: ${(props) => props.theme.textPrimary};
     text-decoration: underline;
   }
 
   & > a:active {
-    color: black;
+    color: ${(props) => props.theme.textPrimary};
   }
 
   & > a:visited {
-    color: black;
+    color: ${(props) => props.theme.textPrimary};
   }
 
   @media (max-width: 768px) {

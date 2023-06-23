@@ -88,6 +88,8 @@ export const XP = styled.div`
     align-items: center;
     font-size: 20px;
     font-weight: 600;
+
+    color: ${(props) => props.theme.textPrimary};
   }
 
   .details,
@@ -102,15 +104,16 @@ export const XP = styled.div`
   .role {
     font-weight: 600;
     margin-bottom: 0.25rem;
+    color: ${(props) => props.theme.textPrimary};
   }
 
   .dates {
     margin-bottom: 1rem;
-    color: #6e6e6e;
+    color: ${(props) => props.theme.textDate};
   }
 
   .details {
-    color: #2e2e2e;
+    color: ${(props) => props.theme.textSecondary};
 
     margin-top: 2px;
     margin-bottom: 2px;

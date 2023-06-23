@@ -30,7 +30,8 @@ export const ProjectContainer = styled.div`
   height: 100%;
 
   border-bottom-right-radius: 50px;
-  border: 1px solid black;
+  border: 1px solid
+    ${(props) => (props.theme.isDark ? props.theme.textSecondary : "black")};
 
   padding: 24px;
 `;
@@ -43,6 +44,7 @@ export const ProjectName = styled.p`
   font-weight: 600;
 
   /* margin-bottom: 12px; */
+  color: ${(props) => props.theme.textPrimary};
 
   margin: 8px 0;
 
@@ -65,7 +67,7 @@ export const ProjectDetails = styled.p`
 
   margin: 12px 0;
 
-  color: #2e2e2e;
+  color: ${(props) => props.theme.textSecondary};
 
   @media (max-width: 768px) {
     font-size: 14px;

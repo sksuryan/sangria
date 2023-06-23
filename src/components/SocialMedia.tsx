@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "@components/GracefulImage";
+import { Link } from "./Link";
 
 export const Container = styled.div`
   display: flex;
@@ -19,19 +19,12 @@ export const Container = styled.div`
   }
 `;
 
-interface LinkProps {
-  href: string;
-  iconUri: string;
-  alt: string;
-}
-
 const linkData = [
   {
     href: "https://github.com/0xSaurabh",
     iconUri: "https://img.icons8.com/ios/64/000000/github.png",
     alt: "github",
   },
-
   {
     href: "https://www.linkedin.com/in/saurabh-kumar-suryan-01684b194/",
     iconUri: "https://img.icons8.com/ios/50/000000/linkedin-2--v1.png",
@@ -50,20 +43,6 @@ const linkData = [
     alt: "wordpress blog",
   },
 ];
-
-const Link: React.FC<LinkProps> = (props) => {
-  return (
-    <a href={props.href} target="_blank" rel="noopener noreferrer">
-      <Image
-        src={props.iconUri}
-        alt={props.alt}
-        width={32}
-        height={32}
-        loading="eager"
-      />
-    </a>
-  );
-};
 
 function SocialMedia() {
   return (

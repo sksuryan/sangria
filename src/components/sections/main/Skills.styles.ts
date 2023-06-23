@@ -31,6 +31,7 @@ export const SkillItem = styled.p`
   font-weight: 400;
 
   padding: 16px;
+  color: ${(props) => props.theme.textPrimary};
 
   @media (max-width: 768px) {
     font-size: 16px;

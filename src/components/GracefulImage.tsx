@@ -16,12 +16,23 @@ const animation = () => css`
   animation: ${fadeInAnimation} 0.1s ease-in forwards;
 `;
 
-const StyledImage = styled(Image)<{ $loaded: boolean }>`
-  opacity: 0;
-  ${(props) => props.$loaded && animation}
+const invert = () => css`
+  filter: invert(1) grayscale(1);
 `;
 
-const GracefulImage: React.FC<ImageProps> = (props) => {
+const StyledImage = styled(Image)<{
+  $loaded: boolean;
+  supportDarkMode?: boolean;
+}>`
+  opacity: 0;
+  ${(props) => props.$loaded && animation};
+  ${(props) => props.supportDarkMode && props.theme.isDark && invert}
+`;
+
+const GracefulImage: React.FC<ImageProps & { supportDarkMode?: boolean }> = ({
+  supportDarkMode = false,
+  ...props
+}) => {
   const [loaded, setLoaded] = useState(false);
 
   return (
@@ -29,6 +40,7 @@ const GracefulImage: React.FC<ImageProps> = (props) => {
       {...props}
       onLoadingComplete={() => setLoaded(true)}
       $loaded={loaded}
+      supportDarkMode={supportDarkMode}
     />
   );
 };

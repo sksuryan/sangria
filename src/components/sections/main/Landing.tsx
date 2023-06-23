@@ -25,6 +25,8 @@ export const Hello = styled.h1`
   font-style: italic;
 
   margin: 8px 0;
+
+  color: ${(props) => props.theme.textSecondary};
 `;
 
 export const Name = styled.h1`
@@ -32,6 +34,7 @@ export const Name = styled.h1`
   font-weight: 900;
 
   margin-bottom: 16px;
+  color: ${(props) => props.theme.textPrimary};
 
   @media (max-width: 768px) {
     font-size: 36px;
@@ -51,6 +54,8 @@ export const Details = styled.p`
   margin-bottom: 16px;
   padding-left: 12px;
   border-left: solid 4px #651fbf;
+
+  color: ${(props) => props.theme.textSecondary};
 
   @media (max-width: 1024px) {
     width: 75%;

@@ -1,5 +1,3 @@
-import "@styles/index.css";
-import Head from "next/head";
 import StyledComponentsRegistry from "lib/registry";
 
 import Nav from "@components/sections/common/Nav";
@@ -7,6 +5,7 @@ import Footer from "@components/sections/common/Footer";
 
 // font setup
 import { Source_Sans_Pro } from "next/font/google";
+import { ThemeProvider } from "@components/ThemeProvider";
 
 const poppins = Source_Sans_Pro({
   preload: true,
@@ -23,16 +22,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+      </head>
       <body>
         <main className={poppins.className}>
           <StyledComponentsRegistry>
-            <Nav />
-            {children}
-            <Footer />
+            <ThemeProvider>
+              <Nav />
+              {children}
+              <Footer />
+            </ThemeProvider>
           </StyledComponentsRegistry>
         </main>
       </body>
