@@ -61,7 +61,7 @@ const SkillsWrapper = () => {
           height={54}
           loading="eager"
         />{" "}
-        <p>Skills</p>
+        <p>Technologies I usually play with</p>
       </Title>
 
       <Suspense fallback={<SkillsShimmer />}>
