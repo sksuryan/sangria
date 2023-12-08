@@ -45,7 +45,7 @@ export const Logo = styled.a`
   margin: 0;
   padding: 0;
 
-  background: linear-gradient(90deg, #4614a8, #8e2de2);
+  background: ${(props) => props.theme.isDark ? "linear-gradient(90deg, rgba(95, 189, 255, 1) 0%, rgba(105, 112, 250, 1) 80%)" : 'linear-gradient(90deg, #4614a8, #8e2de2)'};
   animation: ${gradientAnimation} 4s ease-in-out infinite alternate;
   user-select: none;
 

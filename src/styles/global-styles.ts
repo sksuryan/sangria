@@ -39,7 +39,7 @@ export const Title = styled.div`
   animation: ${gradientAnimation} 4s ease-in-out infinite alternate;
   user-select: none;
 
-  background: linear-gradient(45deg, #8a2387, #e94057, #f27121);
+  background: ${(props) => props.theme.isDark ? 'linear-gradient(to right, #FFC371, #FF5F6D)' : 'linear-gradient(45deg, #8a2387, #e94057, #f27121)'}  ;
   background-size: 400%;
 
   -webkit-background-clip: text;
