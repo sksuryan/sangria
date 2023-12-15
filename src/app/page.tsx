@@ -24,7 +24,6 @@ const App = () => {
         <title>@sksuryan</title>
       </Head>
       <Landing />
-      <Skills />
       <Experience />
       <Projects />
     </MainContainer>
