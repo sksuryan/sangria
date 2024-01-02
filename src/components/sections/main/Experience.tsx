@@ -12,8 +12,13 @@ const Details = [
     role: "SDE l (frontend)",
     dates: "Jun’22 – till this date // Bangalore, India",
     details: [
-      "- Building custom components the Jupiter app using React & TypeScript",
-      "- Writing custom hooks which create better DevX, reduce renders & load times.",
+      "- Worked on multiple sections of the app such as Credit Cards Home, Settings, Bills & Rewards as well as the Onboarding experience of the Cards",
+      "- Solved for complex UI designs while trying to reduce render times using lazy loading of components, preloading of high priority assets, caching responses, and optimising on asset size.",
+      "- Built a robust state management system for cards using state machines which could easily scale to handle more credit card products reusing the same screens, if and when required with minimum changes",
+      "- Built an app wide framework for API response caching, remote config & synchronous storage which enabled the Jupiter app to work offline and softly handle network or API errors.",
+      "- Built reusable components for Jupiter's Europa design system",
+      "- Wrote scripts to automate changelog generation as well as better testing of the Europa components",
+      "- Wrote multiple documents for documentation of the frameworks mentioned above for their easier adoption, as well as to create standard practices across the codebase.",
     ],
   },
   {
